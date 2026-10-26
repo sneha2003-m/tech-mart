@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#eff4ff", "tertiary-fixed": "#dbe1ff", "on-tertiary-fixed-variant": "#003ea8", "tertiary": "#001341", "on-tertiary-fixed": "#00174b", "inverse-surface": "#27313f", "primary-container": "#172b4d", "on-error-container": "#93000a", "surface-dim": "#d0dbed", "on-secondary-fixed": "#341100", "secondary-fixed-dim": "#ffb690", "surface-container": "#e6eeff", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdbca", "on-error": "#ffffff", "tertiary-container": "#00256d", "surface": "#f8f9ff", "inverse-primary": "#b4c7f1", "on-surface-variant": "#44474e", "error": "#ba1a1a", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#b4c5ff", "surface-tint": "#4c5e83", "error-container": "#ffdad6", "on-primary-fixed-variant": "#34476a", "primary-fixed": "#d7e2ff", "secondary-container": "#fd761a", "outline-variant": "#c5c6cf", "primary-fixed-dim": "#b4c7f1", "on-primary-fixed": "#041b3c", "on-tertiary-container": "#648dff", "on-primary": "#ffffff", "on-background": "#121c2a", "on-surface": "#121c2a", "surface-container-high": "#dee9fc", "surface-container-highest": "#d9e3f6", "on-primary-container": "#8093bb", "surface-variant": "#d9e3f6", "on-secondary-fixed-variant": "#783200", "primary": "#001637", "inverse-on-surface": "#eaf1ff", "secondary": "#9d4300", "on-secondary-container": "#5c2400", "outline": "#75777f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.5rem", "gutter-compact": "0.5rem", "space-2xl": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-compact": "1rem", "gutter": "1rem", "space-lg": "1rem", "space-md": "0.75rem", "space-xl": "1.5rem" }, "fontFamily": { "body-md": ["Inter"], "data-mono": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0px}.left-3{left:0.75rem}.left-60{left:15rem}.left-space-md{left:0.75rem}.right-0{right:0px}.right-1\.5{right:0.375rem}.right-2\.5{right:0.625rem}.right-3{right:0.75rem}.top-0{top:0px}.top-1\.5{top:0.375rem}.top-1\/2{top:50%}.z-40{z-index:40}.z-50{z-index:50}.mb-space-lg{margin-bottom:1rem}.mb-space-sm{margin-bottom:0.5rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-space-md{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[68px\]{height:68px}.h-\[884px\]{height:884px}.h-full{height:100%}.min-h-\[884px\]{min-height:884px}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-60{width:15rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-auto{width:auto}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0px}.min-w-\[16px\]{min-width:16px}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.resize-none{resize:none}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:0.125rem}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-space-lg{gap:1rem}.gap-space-md{gap:0.75rem}.gap-space-sm{gap:0.5rem}.gap-space-xl{gap:1.5rem}.gap-space-xs{gap:0.25rem}.divide-none > :not([hidden]) ~ :not([hidden]){border-style:none}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem}.rounded-t-xl{border-top-left-radius:0.75rem;border-top-right-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-on-primary-container\/20{border-color:rgb(128 147 187 / 0.2)}.border-surface-container-highest{--tw-border-opacity:1;border-color:rgb(217 227 246 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-background{--tw-bg-opacity:1;background-color:rgb(248 249 255 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-error-container{--tw-bg-opacity:1;background-color:rgb(255 218 214 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 22 55 / var(--tw-bg-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(23 43 77 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-secondary-container{--tw-bg-opacity:1;background-color:rgb(253 118 26 / var(--tw-bg-opacity, 1))}.bg-secondary-fixed{--tw-bg-opacity:1;background-color:rgb(255 219 202 / var(--tw-bg-opacity, 1))}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(230 238 255 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(222 233 252 / var(--tw-bg-opacity, 1))}.bg-surface-container-highest{--tw-bg-opacity:1;background-color:rgb(217 227 246 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(239 244 255 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest\/95{background-color:rgb(255 255 255 / 0.95)}.bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.bg-tertiary-container{--tw-bg-opacity:1;background-color:rgb(0 37 109 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-space-lg{padding:1rem}.p-space-md{padding:0.75rem}.p-space-sm{padding:0.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-margin{padding-left:1.5rem;padding-right:1.5rem}.px-space-lg{padding-left:1rem;padding-right:1rem}.px-space-md{padding-left:0.75rem;padding-right:0.75rem}.px-space-sm{padding-left:0.5rem;padding-right:0.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-margin{padding-top:1.5rem;padding-bottom:1.5rem}.py-space-md{padding-top:0.75rem;padding-bottom:0.75rem}.pb-space-xs{padding-bottom:0.25rem}.pl-60{padding-left:15rem}.pl-9{padding-left:2.25rem}.pl-space-xs{padding-left:0.25rem}.pr-3{padding-right:0.75rem}.pr-8{padding-right:2rem}.pr-space-md{padding-right:0.75rem}.pt-\[68px\]{padding-top:68px}.pt-space-xs{padding-top:0.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-body-md{font-family:Inter}.font-body-sm{font-family:Inter}.font-data-mono{font-family:Inter}.font-display-lg{font-family:Inter}.font-headline-lg{font-family:Inter}.font-headline-md{font-family:Inter}.font-headline-sm{font-family:Inter}.font-label-md{font-family:Inter}.font-label-sm{font-family:Inter}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-base{font-size:1rem;line-height:1.5rem}.text-body-md{font-size:13px;line-height:18px;font-weight:400}.text-body-sm{font-size:12px;line-height:16px;font-weight:400}.text-data-mono{font-size:13px;line-height:18px;letter-spacing:-0.01em;font-weight:500}.text-display-lg{font-size:32px;line-height:40px;letter-spacing:-0.02em;font-weight:700}.text-headline-lg{font-size:24px;line-height:32px;letter-spacing:-0.015em;font-weight:600}.text-headline-md{font-size:20px;line-height:28px;letter-spacing:-0.01em;font-weight:600}.text-headline-sm{font-size:16px;line-height:24px;letter-spacing:-0.005em;font-weight:600}.text-label-md{font-size:12px;line-height:16px;letter-spacing:0.02em;font-weight:600}.text-label-sm{font-size:11px;line-height:14px;letter-spacing:0.04em;font-weight:600}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-error{--tw-text-opacity:1;color:rgb(186 26 26 / var(--tw-text-opacity, 1))}.text-on-error-container{--tw-text-opacity:1;color:rgb(147 0 10 / var(--tw-text-opacity, 1))}.text-on-primary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-on-primary-container{--tw-text-opacity:1;color:rgb(128 147 187 / var(--tw-text-opacity, 1))}.text-on-secondary-fixed{--tw-text-opacity:1;color:rgb(52 17 0 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(18 28 42 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(68 71 78 / var(--tw-text-opacity, 1))}.text-outline{--tw-text-opacity:1;color:rgb(117 119 127 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(0 22 55 / var(--tw-text-opacity, 1))}.text-primary-container{--tw-text-opacity:1;color:rgb(23 43 77 / var(--tw-text-opacity, 1))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(215 226 255 / var(--tw-text-opacity, 1))}.text-primary-fixed-dim{--tw-text-opacity:1;color:rgb(180 199 241 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(157 67 0 / var(--tw-text-opacity, 1))}.text-secondary-fixed{--tw-text-opacity:1;color:rgb(255 219 202 / var(--tw-text-opacity, 1))}.text-tertiary-fixed{--tw-text-opacity:1;color:rgb(219 225 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.04\)\]{--tw-shadow:0 1px 8px rgba(0,0,0,0.04);--tw-shadow-colored:0 1px 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.08\)\]{--tw-shadow:0 1px 8px rgba(0,0,0,0.08);--tw-shadow-colored:0 1px 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-surface-container-highest{--tw-ring-opacity:1;--tw-ring-color:rgb(217 227 246 / var(--tw-ring-opacity, 1))}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.placeholder\:text-outline::placeholder{--tw-text-opacity:1;color:rgb(117 119 127 / var(--tw-text-opacity, 1))}.hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(0 22 55 / var(--tw-bg-opacity, 1))}.hover\:bg-red-200:hover{--tw-bg-opacity:1;background-color:rgb(254 202 202 / var(--tw-bg-opacity, 1))}.hover\:bg-secondary:hover{--tw-bg-opacity:1;background-color:rgb(157 67 0 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container:hover{--tw-bg-opacity:1;background-color:rgb(230 238 255 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container-high:hover{--tw-bg-opacity:1;background-color:rgb(222 233 252 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container-low:hover{--tw-bg-opacity:1;background-color:rgb(239 244 255 / var(--tw-bg-opacity, 1))}.hover\:bg-tertiary-container:hover{--tw-bg-opacity:1;background-color:rgb(0 37 109 / var(--tw-bg-opacity, 1))}.hover\:text-on-primary:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-on-surface:hover{--tw-text-opacity:1;color:rgb(18 28 42 / var(--tw-text-opacity, 1))}.hover\:opacity-90:hover{opacity:0.9}.hover\:opacity-95:hover{opacity:0.95}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-secondary:focus{--tw-border-opacity:1;border-color:rgb(157 67 0 / var(--tw-border-opacity, 1))}.focus\:bg-surface-container-lowest:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.disabled\:opacity-40:disabled{opacity:0.4}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:flex-col{flex-direction:column}.sm\:items-end{align-items:flex-end}.sm\:items-center{align-items:center}}@media (min-width: 768px){.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:w-\[440px\]{width:440px}.xl\:flex-row{flex-direction:row}}</style></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased" data-mode="connect"><aside class="fixed left-0 top-0 h-[884px] w-60 bg-primary-container z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.08)]" data-stitch-vh="h-[884px]===h-screen"><div class="h-[68px] px-space-lg flex items-center gap-space-sm bg-primary border-b border-on-primary-container/20"><img alt="TechMart Admin Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wczr-fct_gd53fh7kedyiQj9z5z_8-tqgjKtU3UFnp5ESJdOeMiKKCtkfyriv-nTvmjjBq4KmWCAMD2ctxAgGhGNo2NpHmGc_Htxbah3GEIRV-jWyxCiuylKjUHTSEGHEyLCy6bvRv7G-p4JGhWaGzY_niplRyh7dKi-yu14NvZeTK2yDpCSsBpwuFcnEkCecCFAhXUVEQCzpi08W6tNR0DoDbaHdYWt6GtTc33HlTnRbm6TY3xtEd4Q"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold truncate">TechMart</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Enterprise Hub</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-md"><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">MAIN MENU</span></div><nav class="flex flex-col gap-0.5 mb-space-lg" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="truncate">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="products" href="#"><span class="material-symbols-outlined text-lg">inventory_2</span><span class="truncate">Products</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-lg">category</span><span class="truncate">Categories</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="inventory" href="#"><span class="material-symbols-outlined text-lg">warehouse</span><span class="truncate">Inventory</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span><span class="truncate">Orders</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-lg">group</span><span class="truncate">Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="payments" href="#"><span class="material-symbols-outlined text-lg">credit_card</span><span class="truncate">Payments</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="shipping-and-delivery" href="#"><span class="material-symbols-outlined text-lg">local_shipping</span><span class="truncate">Shipping &amp; Delivery</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-lg">insights</span><span class="truncate">Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="external-api-imports" href="#"><span class="material-symbols-outlined text-lg">sync_alt</span><span class="truncate">External API Imports</span></a></nav><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">ADMINISTRATION</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="staff-and-roles" href="#"><span class="material-symbols-outlined text-lg">badge</span><span class="truncate">Staff &amp; Roles</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="activity-logs" href="#"><span class="material-symbols-outlined text-lg">history</span><span class="truncate">Activity Logs</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-lg">notifications</span><span class="truncate">Notifications</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md border-t border-on-primary-container/20 flex items-center justify-between text-on-primary-container"><span class="font-label-sm text-label-sm">v2.4.0 Engine</span><span class="font-data-mono text-data-mono text-[11px] px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed">Live Sync</span></div></aside><div class="pl-60 min-h-[884px] flex flex-col" data-stitch-vh="min-h-[884px]===min-h-screen"><header class="fixed top-0 left-60 right-0 h-[68px] z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-margin border-b border-surface-container-highest"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-base">home</span><span>/</span><span class="text-on-surface font-semibold">Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low border border-surface-container-highest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:border-secondary transition-all" placeholder="Search product IDs, order IDs, customer names..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-secondary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><button aria-label="Help Center" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM-0elpulo2Hcy1AvMUi_CQO3NPW1-ZcWa6kBGqLq_IAgtZxvt0vh6-UcZ5o0M246PzHj9eKNO_KmxN1fa5bC-zh8TEnqkFRvPlihWR42C1u5-jdhTjOmMWGjdfiOH7W_w1REORuC-dXmwIiUdXnhyKVSjtHZFADKJBsDFTEepC9cQZcfUgwUueLTQPWO_ya9kAwcAVIVdqcndHvtjPREZabhSIiwFioomDlxAoIJZrwylzzm6Wb"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-none">Alex Vance</span><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold leading-none">Super Admin</span></div><span class="font-body-sm text-body-sm text-on-surface-variant leading-none mt-1">alex.vance@techmart.io</span></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">expand_more</span></div></div></header><main class="flex-1 pt-[68px] w-full px-margin py-margin"><div class="flex flex-col w-full gap-space-lg">
+<!-- Page Header Context -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Payments &amp; Settlement Ledger</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-primary px-2 py-0.5 rounded-full font-semibold">T+1 Auto-Sweep Active</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Track payment gateway settlements, reconciliation statuses, disputes, and refund disbursements</p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>Export Tax Ledger</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-secondary-container hover:bg-secondary text-on-primary rounded-lg font-label-md text-label-md transition-all shadow-sm" onclick="document.getElementById('webhookModal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-base">webhook</span>
+<span>Simulate Gateway Webhook</span>
+</button>
+</div>
+</div>
+<!-- Top 4 KPI Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Successful Payments</span>
+<span class="material-symbols-outlined text-emerald-700 bg-emerald-100 p-1.5 rounded-lg text-lg">verified</span>
+</div>
+<div class="mt-space-md">
+<div class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">₹46,84,200</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-data-mono text-data-mono text-emerald-700 font-semibold">1,748 txns</span>
+<span>•</span>
+<span class="text-emerald-700 font-medium">98.2% gateway success</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Pending Settlements</span>
+<span class="material-symbols-outlined text-amber-800 bg-amber-100 p-1.5 rounded-lg text-lg">pending_actions</span>
+</div>
+<div class="mt-space-md">
+<div class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">₹1,84,300</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-data-mono text-data-mono text-amber-900 font-semibold">47 uncaptured</span>
+<span>•</span>
+<span>Razorpay &amp; UPI processing</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Failed / Dropped</span>
+<span class="material-symbols-outlined text-error bg-error-container p-1.5 rounded-lg text-lg">error_med</span>
+</div>
+<div class="mt-space-md">
+<div class="font-display-lg text-display-lg text-error font-bold tracking-tight">₹42,150</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-data-mono text-data-mono text-error font-semibold">18 drop-offs</span>
+<span>•</span>
+<span class="text-error">High NetBanking timeouts</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Refunds Disbursed</span>
+<span class="material-symbols-outlined text-primary-container bg-surface-container-high p-1.5 rounded-lg text-lg">published_with_changes</span>
+</div>
+<div class="mt-space-md">
+<div class="font-display-lg text-display-lg text-on-surface font-bold tracking-tight">₹64,250</div>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-data-mono text-data-mono text-primary font-semibold">9 refunds</span>
+<span>•</span>
+<span>Current settlement cycle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Gateway Provider Telemetry Strip -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md shrink-0">
+<span class="material-symbols-outlined text-secondary-container text-lg">sensors</span>
+<span>Gateway Telemetry</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm flex-1">
+<!-- Telemetry Item 1 -->
+<div class="bg-surface-container-low px-3 py-2 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Razorpay</span>
+</div>
+<div class="flex items-center gap-2 font-data-mono text-data-mono text-[11px] text-on-surface-variant">
+<span class="text-emerald-700 font-bold">99.4% up</span>
+<span>210ms</span>
+</div>
+</div>
+<!-- Telemetry Item 2 -->
+<div class="bg-surface-container-low px-3 py-2 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">PayU / UPI</span>
+</div>
+<div class="flex items-center gap-2 font-data-mono text-data-mono text-[11px] text-on-surface-variant">
+<span class="text-emerald-700 font-bold">98.9% up</span>
+<span>285ms</span>
+</div>
+</div>
+<!-- Telemetry Item 3 -->
+<div class="bg-surface-container-low px-3 py-2 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Stripe Global</span>
+</div>
+<div class="flex items-center gap-2 font-data-mono text-data-mono text-[11px] text-on-surface-variant">
+<span class="text-emerald-700 font-bold">100% up</span>
+<span>164ms</span>
+</div>
+</div>
+<!-- Telemetry Item 4 -->
+<div class="bg-surface-container-low px-3 py-2 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">COD Courier</span>
+</div>
+<div class="flex items-center gap-2 font-data-mono text-data-mono text-[11px] text-on-surface-variant">
+<span class="text-secondary font-bold">₹28,400</span>
+<span>pending</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Ledger Panel & Filter Tabs -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col">
+<!-- Filter Navigation Tabs -->
+<div class="flex items-center justify-between px-space-lg pt-space-md bg-surface-container-low rounded-t-xl overflow-x-auto gap-space-lg">
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-2.5 rounded-t-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm flex items-center gap-2" type="button">
+<span>All Transactions</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full text-[11px] font-data-mono text-on-surface-variant">1,842</span>
+</button>
+<button class="px-3.5 py-2.5 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-2" type="button">
+<span>Successful</span>
+<span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full text-[11px] font-data-mono font-semibold">1,748</span>
+</button>
+<button class="px-3.5 py-2.5 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-2" type="button">
+<span>Pending</span>
+<span class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full text-[11px] font-data-mono font-semibold">47</span>
+</button>
+<button class="px-3.5 py-2.5 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-2" type="button">
+<span>Failed</span>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 rounded-full text-[11px] font-data-mono font-semibold">38</span>
+</button>
+<button class="px-3.5 py-2.5 rounded-t-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-2" type="button">
+<span>Refunds &amp; Disputes</span>
+<span class="bg-surface-container px-2 py-0.5 rounded-full text-[11px] font-data-mono text-on-surface font-semibold">9</span>
+</button>
+</div>
+<div class="flex items-center gap-2 pb-2">
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">Auto-refresh: 15s</span>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant transition-colors" title="Sync Ledger" type="button">
+<span class="material-symbols-outlined text-base">sync</span>
+</button>
+</div>
+</div>
+<!-- Parameter Filter Bar -->
+<div class="p-space-md grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-on-surface-variant text-base">calendar_today</span>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Settlement Window</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate mt-0.5">Today (24 Oct 2024, 00:00 - 23:59 IST)</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-on-surface-variant text-base">account_balance_wallet</span>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Payment Gateway / Method</span>
+<select class="font-body-sm text-body-sm text-on-surface font-medium bg-transparent focus:outline-none cursor-pointer">
+<option>All Methods (UPI, Cards, NetBanking, COD)</option>
+<option>Razorpay UPI Instant</option>
+<option>Credit / Debit Cards (Stripe/PayU)</option>
+<option>NetBanking Corporate</option>
+<option>Cash On Delivery (Driver Hub)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-on-surface-variant text-base">currency_rupee</span>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Amount Threshold</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">₹0 — ₹2,50,000+</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2">
+<button class="w-full sm:w-auto px-4 py-2 bg-surface-container-high hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors" type="button">
+          Reset Filter
+        </button>
+<button class="w-full sm:w-auto px-4 py-2 bg-primary text-on-primary hover:bg-primary-container rounded-lg font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">filter_list</span>
+<span>Apply (3 Active)</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3 w-10 text-center">
+<input class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-2.5 px-3">Transaction ID</th>
+<th class="py-2.5 px-3">Order Ref</th>
+<th class="py-2.5 px-3">Customer &amp; Channel</th>
+<th class="py-2.5 px-3">Method &amp; Provider</th>
+<th class="py-2.5 px-3 text-right">Amount (INR)</th>
+<th class="py-2.5 px-3">Audit Timestamp (IST)</th>
+<th class="py-2.5 px-3 text-center">Status</th>
+<th class="py-2.5 px-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<!-- Row 1: Success UPI -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 text-center">
+<input class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-primary">pay_Oj93a19F</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" title="Copy Transaction ID" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">ARN: 9812409831</span>
+</td>
+<td class="py-2.5 px-3">
+<a class="font-data-mono text-data-mono font-semibold text-secondary hover:underline" href="#">TM-1048</a>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Rohan Verma</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">rohan.verma@gmail.com</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-700 text-base">qr_code_2</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">UPI QR (PhonePe)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Razorpay Direct</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right">
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface">₹29,990.00</span>
+<div class="font-data-mono text-data-mono text-[11px] text-emerald-700">Fee: ₹0.00 (MDR 0%)</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="font-data-mono text-data-mono text-[12px] text-on-surface font-medium">24 Oct 2024 14:32:19.412</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Settled in Batch #441</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-emerald-100 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-2.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="Download Tax Invoice" type="button">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="View Payload Logs" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Selected / Eligible for Refund -->
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 text-center">
+<input checked="" class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-primary">TXN_884210</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" title="Copy Transaction ID" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">ARN: 4409124589</span>
+</td>
+<td class="py-2.5 px-3">
+<a class="font-data-mono text-data-mono font-semibold text-secondary hover:underline" href="#">TM-1039</a>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Pooja Sundaram</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">pooja.s@outlook.com</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">credit_card</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">HDFC Credit Card</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PayU Hosted (Visa **4012)</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right">
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface">₹14,999.00</span>
+<div class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">MDR: ₹269.98</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="font-data-mono text-data-mono text-[12px] text-on-surface font-medium">24 Oct 2024 13:18:04.108</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Eligible for 100% Refund</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-emerald-100 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 bg-secondary-container text-on-primary hover:bg-secondary rounded-md font-label-sm text-label-sm font-semibold shadow-sm transition-all inline-flex items-center gap-1" onclick="document.getElementById('refundDrawer').classList.remove('translate-x-full')" type="button">
+<span class="material-symbols-outlined text-sm">undo</span>
+<span>Initiate Refund</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: High Value Corporate NetBanking -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 text-center">
+<input class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-primary">TXN_991823</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">ARN: 7721839912</span>
+</td>
+<td class="py-2.5 px-3">
+<a class="font-data-mono text-data-mono font-semibold text-secondary hover:underline" href="#">TM-1047</a>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Vanguard Technologies LLP</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">finance@vanguard.in</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-base">account_balance</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">ICICI NetBanking Corp</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Razorpay B2B</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right">
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface">₹1,14,900.00</span>
+<div class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">MDR: ₹15.00 Flat</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="font-data-mono text-data-mono text-[12px] text-on-surface font-medium">24 Oct 2024 11:45:52.881</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GST Invoice #TM-24-918</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-emerald-100 text-emerald-800">
+                Paid
+              </span>
+</td>
+<td class="py-2.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="Download Invoice" type="button">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</button>
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="Inspect Payload" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Pending / Capturing -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 text-center">
+<input class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-primary">pay_Kk092b77</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">ARN: --</span>
+</td>
+<td class="py-2.5 px-3">
+<a class="font-data-mono text-data-mono font-semibold text-secondary hover:underline" href="#">TM-1049</a>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Ananya Sen</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ananya.sen@gmail.com</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-800 text-base">sync_saved_locally</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">UPI Autopay Mandate</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Razorpay Subscription</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right">
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface">₹8,995.00</span>
+<div class="font-data-mono text-data-mono text-[11px] text-amber-900">Awaiting Webhook ACK</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="font-data-mono text-data-mono text-[12px] text-on-surface font-medium">24 Oct 2024 14:48:10.021</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Retry counter: 1/3</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-amber-100 text-amber-900">
+                Pending
+              </span>
+</td>
+<td class="py-2.5 px-3 text-right">
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="Inspect Webhook Trace" type="button">
+<span class="material-symbols-outlined text-base">troubleshoot</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Failed Dropped -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 text-center">
+<input class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-primary">TXN_774019</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-error">ERR_GATEWAY_TIMEOUT</span>
+</td>
+<td class="py-2.5 px-3">
+<a class="font-data-mono text-data-mono font-semibold text-secondary hover:underline" href="#">TM-1044</a>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Karthik Menon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">karthik.m@yahoo.co.in</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-base">cancel</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">SBI NetBanking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PayU Gateway drop</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right">
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-on-surface">₹5,490.00</span>
+<div class="font-data-mono text-data-mono text-[11px] text-error">Debit Reversed</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="font-data-mono text-data-mono text-[12px] text-on-surface font-medium">24 Oct 2024 10:12:00.672</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Issuer server timeout</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-error-container text-on-error-container">
+                Failed
+              </span>
+</td>
+<td class="py-2.5 px-3 text-right">
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="View Error Log" type="button">
+<span class="material-symbols-outlined text-base">report_problem</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: Refunded Historical -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3 text-center">
+<input class="rounded accent-secondary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-primary">rfnd_882001A</span>
+<button class="text-on-surface-variant hover:text-on-surface p-0.5 rounded" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">ORIG: TXN_661902</span>
+</td>
+<td class="py-2.5 px-3">
+<a class="font-data-mono text-data-mono font-semibold text-secondary hover:underline" href="#">TM-1022</a>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Meera Kapoor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">meera.k@gmail.com</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">change_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Refunded to Source</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Axis Debit Card</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right">
+<span class="font-data-mono text-data-mono text-[14px] font-bold text-primary">-₹4,250.00</span>
+<div class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">UTR: 3391004128</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="font-data-mono text-data-mono text-[12px] text-on-surface font-medium">24 Oct 2024 09:22:18.910</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Batch processed</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-label-sm font-bold bg-surface-container-high text-primary font-semibold">
+                Refunded
+              </span>
+</td>
+<td class="py-2.5 px-3 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 hover:bg-surface-container rounded text-on-surface-variant" title="View Credit Note" type="button">
+<span class="material-symbols-outlined text-base">description</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Controls -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md bg-surface-container-low rounded-b-xl gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span>Showing <strong class="text-on-surface font-semibold">1 – 6</strong> of 1,842 transactions</span>
+<span>•</span>
+<span class="font-data-mono text-data-mono text-[11px]">1 row selected</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 bg-surface-container-lowest text-on-surface-variant rounded font-label-md text-label-md disabled:opacity-40" disabled="" type="button">Previous</button>
+<div class="flex items-center gap-1">
+<button class="w-7 h-7 bg-primary text-on-primary rounded font-label-sm text-label-sm font-bold" type="button">1</button>
+<button class="w-7 h-7 hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm" type="button">2</button>
+<button class="w-7 h-7 hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm" type="button">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-7 h-7 hover:bg-surface-container text-on-surface rounded font-label-sm text-label-sm" type="button">307</button>
+</div>
+<button class="px-2.5 py-1 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded font-label-md text-label-md" type="button">Next</button>
+</div>
+</div>
+</div>
+<!-- Contextual Right-Side Refund Drawer (Slide-Over Panel) -->
+<div class="fixed inset-y-0 right-0 w-full sm:w-[480px] bg-surface-container-lowest shadow-xl z-50 transform translate-x-full transition-transform duration-200 flex flex-col" id="refundDrawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Initiate Settlement Refund</span>
+<span class="font-label-sm text-label-sm bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full font-bold">Instant Reverse</span>
+</div>
+<span class="font-data-mono text-data-mono text-body-sm text-secondary font-semibold mt-0.5">TXN_884210 • Order #TM-1039</span>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" onclick="document.getElementById('refundDrawer').classList.add('translate-x-full')" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Drawer Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg">
+<!-- Ledger Snapshot -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Original Charged Amount:</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">₹14,999.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Eligible for Disbursal:</span>
+<span class="font-data-mono text-data-mono font-bold text-emerald-700">₹14,999.00</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Customer Channel:</span>
+<span class="font-medium text-on-surface">Pooja Sundaram (HDFC Visa Card)</span>
+</div>
+</div>
+<!-- Refund Type Switcher -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Refund Type</span>
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-1 rounded-lg">
+<button class="py-2 rounded-md bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm" type="button">
+            Full Refund (100%)
+          </button>
+<button class="py-2 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md font-medium transition-colors" type="button">
+            Partial Disbursal
+          </button>
+</div>
+</div>
+<!-- Reason Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="refundReason">Reason for Refund</label>
+<select class="w-full h-10 px-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest transition-colors cursor-pointer" id="refundReason">
+<option selected="">Customer Return: Defective Unit (RMA Verified)</option>
+<option>Order Cancelled Before Dispatch</option>
+<option>Double Debit / Gateway Duplicate Capture</option>
+<option>Logistics Non-Delivery / Lost in Transit</option>
+<option>Customer Grievance Resolution / Goodwill</option>
+</select>
+</div>
+<!-- Restock Fee & Deductions calculator -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Deduction &amp; Restocking Adjustment</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Restock Fee (INR)</span>
+<input class="h-9 px-3 bg-surface-container-lowest rounded-lg font-data-mono text-data-mono text-on-surface focus:outline-none" type="text" value="₹0.00"/>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Reverse Shipping Fee</span>
+<input class="h-9 px-3 bg-surface-container-lowest rounded-lg font-data-mono text-data-mono text-on-surface focus:outline-none" type="text" value="₹0.00"/>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Net Remittance to Beneficiary:</span>
+<span class="font-data-mono text-data-mono text-[16px] font-bold text-secondary">₹14,999.00</span>
+</div>
+</div>
+<!-- Sandbox Notification Callout -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-start gap-3 text-primary">
+<span class="material-symbols-outlined text-secondary-container mt-0.5 text-lg">info</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Simulated Sandbox Mode Active</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real customer bank accounts and corporate reserve lines will not be debited in this test environment. Audit hooks will be sent to the staging endpoint.</p>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2.5 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors" onclick="document.getElementById('refundDrawer').classList.add('translate-x-full')" type="button">
+        Cancel
+      </button>
+<button class="px-5 py-2.5 bg-secondary-container hover:bg-secondary text-on-primary rounded-lg font-label-md text-label-md font-bold transition-all shadow-md flex items-center gap-1.5" onclick="alert('Disbursement sequence initialized for ₹14,999'); document.getElementById('refundDrawer').classList.add('translate-x-full');" type="button">
+<span class="material-symbols-outlined text-base">send_money</span>
+<span>Confirm &amp; Disburse ₹14,999</span>
+</button>
+</div>
+</div>
+<!-- Gateway Webhook Simulation Modal -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="webhookModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-xl overflow-hidden flex flex-col">
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">webhook</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Simulate Gateway Webhook</span>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('webhookModal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="webhookEvent">Event Target</label>
+<select class="h-9 px-3 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none" id="webhookEvent">
+<option>payment.captured (Razorpay Instant)</option>
+<option>payment.failed (Bank Downtime)</option>
+<option>refund.processed (Disbursed via NEFT/UPI)</option>
+<option>mandate.debit_scheduled (Autopay)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="webhookPayload">JSON Test Payload</label>
+<textarea class="p-3 bg-surface-container-low font-data-mono text-data-mono text-[12px] text-on-surface rounded-lg focus:outline-none resize-none" id="webhookPayload" rows="6">{
+  "entity": "event",
+  "account_id": "acc_TechMart_Live",
+  "event": "payment.captured",
+  "contains": ["payment"],
+  "payload": {
+    "payment": {
+      "entity": {
+        "id": "pay_TEST_991823a",
+        "amount": 2999000,
+        "currency": "INR",
+        "status": "captured",
+        "order_id": "order_TM_1048",
+        "method": "upi"
+      }
+    }
+  }
+}</textarea>
+</div>
+</div>
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 bg-surface-container-lowest text-on-surface rounded-lg font-label-md text-label-md" onclick="document.getElementById('webhookModal').classList.add('hidden')" type="button">
+          Dismiss
+        </button>
+<button class="px-4 py-2 bg-primary text-on-primary hover:bg-primary-container rounded-lg font-label-md text-label-md font-bold shadow-sm" onclick="alert('Webhook payload broadcast successfully.'); document.getElementById('webhookModal').classList.add('hidden');" type="button">
+          Send Simulated Event
+        </button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

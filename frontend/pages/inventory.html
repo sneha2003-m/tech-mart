@@ -1,0 +1,698 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#eff4ff", "tertiary-fixed": "#dbe1ff", "on-tertiary-fixed-variant": "#003ea8", "tertiary": "#001341", "on-tertiary-fixed": "#00174b", "inverse-surface": "#27313f", "primary-container": "#172b4d", "on-error-container": "#93000a", "surface-dim": "#d0dbed", "on-secondary-fixed": "#341100", "secondary-fixed-dim": "#ffb690", "surface-container": "#e6eeff", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdbca", "on-error": "#ffffff", "tertiary-container": "#00256d", "surface": "#f8f9ff", "inverse-primary": "#b4c7f1", "on-surface-variant": "#44474e", "error": "#ba1a1a", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#b4c5ff", "surface-tint": "#4c5e83", "error-container": "#ffdad6", "on-primary-fixed-variant": "#34476a", "primary-fixed": "#d7e2ff", "secondary-container": "#fd761a", "outline-variant": "#c5c6cf", "primary-fixed-dim": "#b4c7f1", "on-primary-fixed": "#041b3c", "on-tertiary-container": "#648dff", "on-primary": "#ffffff", "on-background": "#121c2a", "on-surface": "#121c2a", "surface-container-high": "#dee9fc", "surface-container-highest": "#d9e3f6", "on-primary-container": "#8093bb", "surface-variant": "#d9e3f6", "on-secondary-fixed-variant": "#783200", "primary": "#001637", "inverse-on-surface": "#eaf1ff", "secondary": "#9d4300", "on-secondary-container": "#5c2400", "outline": "#75777f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.5rem", "gutter-compact": "0.5rem", "space-2xl": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-compact": "1rem", "gutter": "1rem", "space-lg": "1rem", "space-md": "0.75rem", "space-xl": "1.5rem" }, "fontFamily": { "body-md": ["Inter"], "data-mono": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.left-0{left:0px}.left-3{left:0.75rem}.left-60{left:15rem}.left-space-md{left:0.75rem}.right-0{right:0px}.right-1\.5{right:0.375rem}.right-2\.5{right:0.625rem}.right-3{right:0.75rem}.top-0{top:0px}.top-1\.5{top:0.375rem}.top-1\/2{top:50%}.z-40{z-index:40}.z-50{z-index:50}.mb-space-lg{margin-bottom:1rem}.mb-space-sm{margin-bottom:0.5rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-space-md{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[68px\]{height:68px}.h-\[884px\]{height:884px}.h-full{height:100%}.min-h-\[884px\]{min-height:884px}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-60{width:15rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-auto{width:auto}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0px}.min-w-\[16px\]{min-width:16px}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.resize-none{resize:none}.appearance-none{-webkit-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:0.125rem}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-space-lg{gap:1rem}.gap-space-md{gap:0.75rem}.gap-space-sm{gap:0.5rem}.gap-space-xl{gap:1.5rem}.gap-space-xs{gap:0.25rem}.divide-none > :not([hidden]) ~ :not([hidden]){border-style:none}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem}.rounded-t-xl{border-top-left-radius:0.75rem;border-top-right-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-on-primary-container\/20{border-color:rgb(128 147 187 / 0.2)}.border-surface-container-highest{--tw-border-opacity:1;border-color:rgb(217 227 246 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-background{--tw-bg-opacity:1;background-color:rgb(248 249 255 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-error-container{--tw-bg-opacity:1;background-color:rgb(255 218 214 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 22 55 / var(--tw-bg-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(23 43 77 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-secondary-container{--tw-bg-opacity:1;background-color:rgb(253 118 26 / var(--tw-bg-opacity, 1))}.bg-secondary-fixed{--tw-bg-opacity:1;background-color:rgb(255 219 202 / var(--tw-bg-opacity, 1))}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(230 238 255 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(222 233 252 / var(--tw-bg-opacity, 1))}.bg-surface-container-highest{--tw-bg-opacity:1;background-color:rgb(217 227 246 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(239 244 255 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-surface-container-lowest\/95{background-color:rgb(255 255 255 / 0.95)}.bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.bg-tertiary-container{--tw-bg-opacity:1;background-color:rgb(0 37 109 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-space-lg{padding:1rem}.p-space-md{padding:0.75rem}.p-space-sm{padding:0.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-margin{padding-left:1.5rem;padding-right:1.5rem}.px-space-lg{padding-left:1rem;padding-right:1rem}.px-space-md{padding-left:0.75rem;padding-right:0.75rem}.px-space-sm{padding-left:0.5rem;padding-right:0.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-margin{padding-top:1.5rem;padding-bottom:1.5rem}.py-space-md{padding-top:0.75rem;padding-bottom:0.75rem}.pb-space-xs{padding-bottom:0.25rem}.pl-60{padding-left:15rem}.pl-9{padding-left:2.25rem}.pl-space-xs{padding-left:0.25rem}.pr-3{padding-right:0.75rem}.pr-8{padding-right:2rem}.pr-space-md{padding-right:0.75rem}.pt-\[68px\]{padding-top:68px}.pt-space-xs{padding-top:0.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-body-md{font-family:Inter}.font-body-sm{font-family:Inter}.font-data-mono{font-family:Inter}.font-display-lg{font-family:Inter}.font-headline-lg{font-family:Inter}.font-headline-md{font-family:Inter}.font-headline-sm{font-family:Inter}.font-label-md{font-family:Inter}.font-label-sm{font-family:Inter}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-base{font-size:1rem;line-height:1.5rem}.text-body-md{font-size:13px;line-height:18px;font-weight:400}.text-body-sm{font-size:12px;line-height:16px;font-weight:400}.text-data-mono{font-size:13px;line-height:18px;letter-spacing:-0.01em;font-weight:500}.text-display-lg{font-size:32px;line-height:40px;letter-spacing:-0.02em;font-weight:700}.text-headline-lg{font-size:24px;line-height:32px;letter-spacing:-0.015em;font-weight:600}.text-headline-md{font-size:20px;line-height:28px;letter-spacing:-0.01em;font-weight:600}.text-headline-sm{font-size:16px;line-height:24px;letter-spacing:-0.005em;font-weight:600}.text-label-md{font-size:12px;line-height:16px;letter-spacing:0.02em;font-weight:600}.text-label-sm{font-size:11px;line-height:14px;letter-spacing:0.04em;font-weight:600}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-error{--tw-text-opacity:1;color:rgb(186 26 26 / var(--tw-text-opacity, 1))}.text-on-error-container{--tw-text-opacity:1;color:rgb(147 0 10 / var(--tw-text-opacity, 1))}.text-on-primary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-on-primary-container{--tw-text-opacity:1;color:rgb(128 147 187 / var(--tw-text-opacity, 1))}.text-on-secondary-fixed{--tw-text-opacity:1;color:rgb(52 17 0 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(18 28 42 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(68 71 78 / var(--tw-text-opacity, 1))}.text-outline{--tw-text-opacity:1;color:rgb(117 119 127 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(0 22 55 / var(--tw-text-opacity, 1))}.text-primary-container{--tw-text-opacity:1;color:rgb(23 43 77 / var(--tw-text-opacity, 1))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(215 226 255 / var(--tw-text-opacity, 1))}.text-primary-fixed-dim{--tw-text-opacity:1;color:rgb(180 199 241 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(157 67 0 / var(--tw-text-opacity, 1))}.text-secondary-fixed{--tw-text-opacity:1;color:rgb(255 219 202 / var(--tw-text-opacity, 1))}.text-tertiary-fixed{--tw-text-opacity:1;color:rgb(219 225 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.04\)\]{--tw-shadow:0 1px 8px rgba(0,0,0,0.04);--tw-shadow-colored:0 1px 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.08\)\]{--tw-shadow:0 1px 8px rgba(0,0,0,0.08);--tw-shadow-colored:0 1px 8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-surface-container-highest{--tw-ring-opacity:1;--tw-ring-color:rgb(217 227 246 / var(--tw-ring-opacity, 1))}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.placeholder\:text-outline::placeholder{--tw-text-opacity:1;color:rgb(117 119 127 / var(--tw-text-opacity, 1))}.hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(0 22 55 / var(--tw-bg-opacity, 1))}.hover\:bg-red-200:hover{--tw-bg-opacity:1;background-color:rgb(254 202 202 / var(--tw-bg-opacity, 1))}.hover\:bg-secondary:hover{--tw-bg-opacity:1;background-color:rgb(157 67 0 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container:hover{--tw-bg-opacity:1;background-color:rgb(230 238 255 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container-high:hover{--tw-bg-opacity:1;background-color:rgb(222 233 252 / var(--tw-bg-opacity, 1))}.hover\:bg-surface-container-low:hover{--tw-bg-opacity:1;background-color:rgb(239 244 255 / var(--tw-bg-opacity, 1))}.hover\:bg-tertiary-container:hover{--tw-bg-opacity:1;background-color:rgb(0 37 109 / var(--tw-bg-opacity, 1))}.hover\:text-on-primary:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-on-surface:hover{--tw-text-opacity:1;color:rgb(18 28 42 / var(--tw-text-opacity, 1))}.hover\:opacity-90:hover{opacity:0.9}.hover\:opacity-95:hover{opacity:0.95}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-secondary:focus{--tw-border-opacity:1;border-color:rgb(157 67 0 / var(--tw-border-opacity, 1))}.focus\:bg-surface-container-lowest:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.disabled\:opacity-40:disabled{opacity:0.4}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:flex-col{flex-direction:column}.sm\:items-end{align-items:flex-end}.sm\:items-center{align-items:center}}@media (min-width: 768px){.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}@media (min-width: 1280px){.xl\:w-\[440px\]{width:440px}.xl\:flex-row{flex-direction:row}}</style></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased" data-mode="connect"><aside class="fixed left-0 top-0 h-[884px] w-60 bg-primary-container z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.08)]" data-stitch-vh="h-[884px]===h-screen"><div class="h-[68px] px-space-lg flex items-center gap-space-sm bg-primary border-b border-on-primary-container/20"><img alt="TechMart Admin Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wczr-fct_gd53fh7kedyiQj9z5z_8-tqgjKtU3UFnp5ESJdOeMiKKCtkfyriv-nTvmjjBq4KmWCAMD2ctxAgGhGNo2NpHmGc_Htxbah3GEIRV-jWyxCiuylKjUHTSEGHEyLCy6bvRv7G-p4JGhWaGzY_niplRyh7dKi-yu14NvZeTK2yDpCSsBpwuFcnEkCecCFAhXUVEQCzpi08W6tNR0DoDbaHdYWt6GtTc33HlTnRbm6TY3xtEd4Q"><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold truncate">TechMart</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Enterprise Hub</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-md"><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">MAIN MENU</span></div><nav class="flex flex-col gap-0.5 mb-space-lg" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="truncate">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="products" href="#"><span class="material-symbols-outlined text-lg">inventory_2</span><span class="truncate">Products</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-lg">category</span><span class="truncate">Categories</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2 transition-colors bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="inventory" href="#"><span class="material-symbols-outlined text-lg">warehouse</span><span class="truncate">Inventory</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span><span class="truncate">Orders</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-lg">group</span><span class="truncate">Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="payments" href="#"><span class="material-symbols-outlined text-lg">credit_card</span><span class="truncate">Payments</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="shipping-and-delivery" href="#"><span class="material-symbols-outlined text-lg">local_shipping</span><span class="truncate">Shipping &amp; Delivery</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-lg">insights</span><span class="truncate">Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="external-api-imports" href="#"><span class="material-symbols-outlined text-lg">sync_alt</span><span class="truncate">External API Imports</span></a></nav><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">ADMINISTRATION</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="staff-and-roles" href="#"><span class="material-symbols-outlined text-lg">badge</span><span class="truncate">Staff &amp; Roles</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="activity-logs" href="#"><span class="material-symbols-outlined text-lg">history</span><span class="truncate">Activity Logs</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-lg">notifications</span><span class="truncate">Notifications</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md border-t border-on-primary-container/20 flex items-center justify-between text-on-primary-container"><span class="font-label-sm text-label-sm">v2.4.0 Engine</span><span class="font-data-mono text-data-mono text-[11px] px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed">Live Sync</span></div></aside><div class="pl-60 min-h-[884px] flex flex-col" data-stitch-vh="min-h-[884px]===min-h-screen"><header class="fixed top-0 left-60 right-0 h-[68px] z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-margin border-b border-surface-container-highest"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-base">home</span><span>/</span><span class="text-on-surface font-semibold">Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low border border-surface-container-highest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:border-secondary transition-all" placeholder="Search product IDs, order IDs, customer names..." type="text"></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-secondary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><button aria-label="Help Center" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM-0elpulo2Hcy1AvMUi_CQO3NPW1-ZcWa6kBGqLq_IAgtZxvt0vh6-UcZ5o0M246PzHj9eKNO_KmxN1fa5bC-zh8TEnqkFRvPlihWR42C1u5-jdhTjOmMWGjdfiOH7W_w1REORuC-dXmwIiUdXnhyKVSjtHZFADKJBsDFTEepC9cQZcfUgwUueLTQPWO_ya9kAwcAVIVdqcndHvtjPREZabhSIiwFioomDlxAoIJZrwylzzm6Wb"><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-none">Alex Vance</span><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold leading-none">Super Admin</span></div><span class="font-body-sm text-body-sm text-on-surface-variant leading-none mt-1">alex.vance@techmart.io</span></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">expand_more</span></div></div></header><main class="flex-1 pt-[68px] w-full px-margin py-margin"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Command & Synchronicity Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="">Fulfillment Operations</span>
+<span>•</span>
+<span class="text-secondary font-bold">Realtime Node Master</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-0.5">Inventory Matrix &amp; Stock Ledger</h1>
+</div>
+<!-- Right Global Telemetry Badges -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="">3 Node Clusters Online</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary transition-all" type="button">
+<span class="material-symbols-outlined text-base">sync</span>
+<span>Sync Reconcile</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-secondary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span class="">Export Stock Sheet (CSV)</span>
+</button>
+</div>
+</div>
+<!-- KPI Metrics Ribbon (5 Cards Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Card 1: Total Stock Units -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md">Total Stock Units</span>
+<span class="material-symbols-outlined text-base p-1.5 rounded-lg bg-surface-container text-on-surface">layers</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-bold">8,420</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-emerald-700 font-bold">+184 units</span>
+<span>vs yesterday</span>
+</div>
+</div>
+<!-- Sparkline indicator -->
+<div class="w-full mt-space-md pt-space-xs">
+<svg class="w-full h-7 text-primary-container" fill="none" viewBox="0 0 100 24">
+<path d="M0 18 Q 20 8, 40 14 T 80 4 T 100 9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" class=""></path>
+<path d="M0 18 Q 20 8, 40 14 T 80 4 T 100 9 L 100 24 L 0 24 Z" fill="currentColor" fill-opacity="0.08"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2: In-Stock Products -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md">In-Stock Products</span>
+<span class="material-symbols-outlined text-base p-1.5 rounded-lg bg-surface-container text-emerald-800">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-bold">382</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold">Healthy 89.2%</span>
+<span class="text-on-surface-variant">active catalog</span>
+</div>
+</div>
+<div class="w-full mt-space-md pt-space-xs flex items-center gap-1.5">
+<div class="h-2 flex-1 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-emerald-600 rounded-full" style="width: 89.2%;"></div>
+</div>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">89%</span>
+</div>
+</div>
+<!-- Card 3: Low-Stock Products -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md">Low-Stock Alert</span>
+<span class="material-symbols-outlined text-base p-1.5 rounded-lg bg-amber-100 text-amber-900">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-display-lg text-amber-900 tracking-tight font-bold">32</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-900 font-bold">Amber alert</span>
+<span class="text-on-surface-variant">under buffer</span>
+</div>
+</div>
+<div class="w-full mt-space-md pt-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[11px]">
+<span>Lead-time impact</span>
+<span class="text-amber-800 font-bold">6 POs pending</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Out-of-Stock Products -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-on-surface-variant mb-space-sm">
+<span class="font-label-md text-label-md">Out-of-Stock</span>
+<span class="material-symbols-outlined text-base p-1.5 rounded-lg bg-red-100 text-red-700">report_problem</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-display-lg text-error tracking-tight font-bold">14</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm">
+<span class="px-1.5 py-0.5 rounded bg-red-100 text-error font-bold">Urgent reorder</span>
+<span class="text-on-surface-variant">critical lost sales</span>
+</div>
+</div>
+<div class="w-full mt-space-md pt-space-xs">
+<button class="w-full py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold hover:bg-red-200 transition-colors" type="button">
+          View 14 Urgent SKUs
+        </button>
+</div>
+</div>
+<!-- Card 5: Valuation -->
+<div class="flex flex-col justify-between p-space-lg rounded-xl bg-primary text-on-primary shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between text-primary-fixed mb-space-sm">
+<span class="font-label-md text-label-md">Total Stock Valuation</span>
+<span class="material-symbols-outlined text-base p-1.5 rounded-lg bg-tertiary-container text-tertiary-fixed">currency_rupee</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-lg text-display-lg text-on-primary tracking-tight font-bold">₹3,42,85,600</span>
+<div class="flex items-center gap-1 mt-1 font-label-sm text-label-sm text-primary-fixed">
+<span>Cost price basis</span>
+<span>•</span>
+<span class="text-secondary-fixed font-bold">FIFO</span>
+</div>
+</div>
+<div class="w-full mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-[11px] text-primary-fixed-dim">
+<span>Holding cost index</span>
+<span class="text-secondary-fixed">1.4% / mo</span>
+</div>
+</div>
+</div>
+<!-- Main Workstation Layout: Master Inventory Grid & Side Drawer -->
+<div class="flex flex-col xl:flex-row gap-space-lg items-start w-full">
+<!-- Master Inventory Workstation (Table Section) -->
+<div class="flex flex-col flex-1 min-w-0 w-full bg-surface-container-lowest rounded-xl shadow-sm">
+<!-- Filter and Query Toolbar -->
+<div class="p-space-lg flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md bg-surface-container-low rounded-t-xl">
+<div class="flex flex-1 items-center gap-space-sm min-w-0">
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm shadow-sm focus:outline-none focus:bg-surface-container-lowest" placeholder="Search by SKU, item title, or barcode..." type="text" value="WH-1000XM5">
+</div>
+<!-- Health Quick Select Dropdown -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm appearance-none cursor-pointer focus:outline-none">
+<option value="all">Health: All States</option>
+<option value="healthy">Health: Healthy Only</option>
+<option selected="" value="critical">Health: Critical / Amber</option>
+<option value="depleted">Health: Depleted (Zero)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">arrow_drop_down</span>
+</div>
+<!-- Warehouse Location Selector -->
+<div class="relative">
+<select class="h-9 px-3 pr-8 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-sm appearance-none cursor-pointer focus:outline-none">
+<option value="all">Facility: All Warehouses</option>
+<option selected="" value="mum">Mumbai Central FC</option>
+<option value="blr">Bengaluru North Hub</option>
+<option value="del">Delhi NCR Hub</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">warehouse</span>
+</div>
+</div>
+<!-- Density and Views toggle -->
+<div class="flex items-center gap-space-xs justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant mr-1">Showing 6 of 428 SKUs</span>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Filter Preset Settings" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Table Density" type="button">
+<span class="material-symbols-outlined text-base">density_medium</span>
+</button>
+</div>
+</div>
+<!-- Inventory Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-[11px] uppercase tracking-wider">
+<th class="py-2.5 px-3 font-semibold">Product &amp; SKU</th>
+<th class="py-2.5 px-3 font-semibold">Warehouse</th>
+<th class="py-2.5 px-3 font-semibold text-right">On-Hand</th>
+<th class="py-2.5 px-3 font-semibold text-right">Reserved</th>
+<th class="py-2.5 px-3 font-semibold text-right">Available</th>
+<th class="py-2.5 px-3 font-semibold text-right">Threshold</th>
+<th class="py-2.5 px-3 font-semibold text-center">Health Status</th>
+<th class="py-2.5 px-3 font-semibold">Last Restocked</th>
+<th class="py-2.5 px-3 font-semibold text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-none text-on-surface">
+<!-- Row 1: Active focused row (Sony Headphones) -->
+<tr class="bg-surface-container-high transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-md object-cover bg-surface-container shrink-0" data-alt="Close up product photograph of sleek matte black Sony WH-1000XM5 wireless noise cancelling headphones resting on a minimalist studio podium, clean sharp lighting, high end consumer electronics product render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACyIJGipmWYIhwfc4QElpzt85ioTGUpnFw21yxqhfsdojZh44gue3N5JY4r96h276Huo8xv-46SUxC4q8BsgA7LWXP9CmucBos0dqPG_kenVKqDORJ3T-CChyIJgqZGXbnBJp4T5BhDaGfqJ5PTZFfhz1pTvsiKuCTlBvxDj04yVdObea4EjMujlSA3J1uG66scmcA0naxhUjRLU7hHMJoOtXLbAjrhV1SJstbUVv9ANspmvuGVArE">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] leading-tight font-semibold text-on-surface truncate">Sony WH-1000XM5 ANC</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">SN-WHXM5-BLK</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+<span class="">Mumbai Central FC</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-medium">10 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">6 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-bold text-amber-900">4 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">15 min</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold bg-amber-100 text-amber-900">
+                  Amber Warning
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-on-surface-variant">12 Oct 2024</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-secondary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm hover:opacity-90 transition-all" type="button">
+                  Adjusting
+                </button>
+</td>
+</tr>
+<!-- Row 2: Apple MacBook Air M2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-md object-cover bg-surface-container shrink-0" data-alt="Top view studio product photograph of Apple MacBook Air M2 laptop in silver aluminum finish open displaying crisp desktop screen on neutral light gray surface, cinematic diffuse lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9qHUhum02-gqIsFl1bVJuUPQMIKlo-AFDKc5CaikaKLhC-j9O-jMGo2gk1Dd2LeJumaQKs7FW7PlrePCfrkia1Rz4fgvZnqLyU_byzj74_5GXrLXIjmkGMNJd1fUABGOnKpy42vWvH1xUlCDgElp6ZovQpfIZiA2e-v9FZS1Sd4nsOrkcElZmnEBj-itcNtvFVkUiPOeyzYV1NacvSoiH_K2393C4f1zCalj8hG_kaWmuQ54a7_SP">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] leading-tight font-semibold text-on-surface truncate">MacBook Air M2 (Silver, 512GB)</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">AP-MBA-M2-SLV</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+<span class="">Mumbai Central FC</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-medium">48 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">12 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-bold text-emerald-800">36 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">10 min</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold bg-emerald-100 text-emerald-800">
+                  Green Healthy
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-on-surface-variant">24 Oct 2024</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Adjust Stock
+                </button>
+</td>
+</tr>
+<!-- Row 3: Logitech MX Master 3S -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-9 h-9 rounded-md object-cover bg-surface-container shrink-0" data-alt="Angled detailed studio shot of Logitech MX Master 3S wireless performance mouse in graphite gray finish highlighting ergonomic thumb rest and metal scroll wheel on crisp backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU2DkNyVwlAzar7EPRFooqkOJTzkqiaVmK5yqtJnev1qyWxcwvo9tx11-udEEQGcdDFYPQAU96rRgvml456yNnKvmszx-BXgjFiBRVjYSZS18vsqQLkwXsxMO-m3c4HhS34PzOzxHaj6RpzwMcm8Bwc9KsTsfug0SlplQYyqmqXRns17PUAg03TtdpgPE_fn2kdpb5kGdW83I_j9gMHvPEM7qLe18AXFJsS9elYflZAjeSZqrC49F7">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] leading-tight font-semibold text-on-surface truncate">Logitech MX Master 3S Mouse</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">LG-MXM3S-GR</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-600"></span>
+<span class="">Bengaluru North Hub</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-medium">112 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">18 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-bold text-emerald-800">94 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">25 min</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold bg-emerald-100 text-emerald-800">
+                  Green Healthy
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-on-surface-variant">19 Oct 2024</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Adjust Stock
+                </button>
+</td>
+</tr>
+<!-- Row 4: Apple iPhone 15 Pro Max -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-md bg-red-100 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">smartphone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] leading-tight font-semibold text-on-surface truncate">iPhone 15 Pro Max 256GB</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">AP-IP15PM-NAT</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+<span class="">Delhi NCR Hub</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-medium">3 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">3 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-bold text-error">0 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">20 min</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold bg-red-100 text-error">
+                  Red Critical
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-on-surface-variant">05 Oct 2024</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Adjust Stock
+                </button>
+</td>
+</tr>
+<!-- Row 5: Keychron Q1 Pro Mechanical Keyboard -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">keyboard</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] leading-tight font-semibold text-on-surface truncate">Keychron Q1 Pro Custom Wireless</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">KC-Q1PRO-RED</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>
+<span>Mumbai Central FC</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-medium">8 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">2 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-bold text-amber-900">6 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">12 min</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold bg-amber-100 text-amber-900">
+                  Amber Warning
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-on-surface-variant">18 Oct 2024</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Adjust Stock
+                </button>
+</td>
+</tr>
+<!-- Row 6: Dell UltraSharp 27 4K -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-md bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">tv</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] leading-tight font-semibold text-on-surface truncate">Dell UltraSharp U2723QE 4K Hub</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant">DL-U2723QE-IPS</span>
+</div>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-teal-600"></span>
+<span>Delhi NCR Hub</span>
+</div>
+</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-medium">65 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">14 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono font-bold text-emerald-800">51 units</td>
+<td class="py-2.5 px-3 text-right font-data-mono text-on-surface-variant">15 min</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-[11px] font-semibold bg-emerald-100 text-emerald-800">
+                  Green Healthy
+                </span>
+</td>
+<td class="py-2.5 px-3 font-body-sm text-on-surface-variant">21 Oct 2024</td>
+<td class="py-2.5 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Adjust Stock
+                </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Aggregate Table Status -->
+<div class="p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low rounded-b-xl">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>Rows per page:</span>
+<select class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">
+<option>10</option>
+<option selected="">25</option>
+<option>50</option>
+</select>
+<span class="ml-2">1–6 of 428 records</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm">18</button>
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Slide-Over Drawer: 'Quick Stock Adjustment' (Right Docked Panel) -->
+<div class="w-full xl:w-[440px] shrink-0 bg-surface-container-lowest rounded-xl shadow-xl flex flex-col overflow-hidden">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-primary text-on-primary flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-primary uppercase font-bold tracking-wider">Adjustment Console</span>
+<span class="font-data-mono text-data-mono text-[11px] text-primary-fixed">WH-FC-MUM</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-primary mt-1 font-bold">Quick Stock Adjustment</h2>
+</div>
+<button class="p-1 text-primary-fixed hover:text-on-primary transition-colors" title="Close Panel" type="button">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Product Meta Snapshot -->
+<div class="p-space-lg bg-surface-container-low flex items-start gap-space-md">
+<img class="w-16 h-16 rounded-lg object-cover bg-surface-container shrink-0 shadow-sm" data-alt="Sony WH-1000XM5 wireless black headphones resting on modern desk with studio softbox reflections, crisp product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCtrbuzvEwKE8aJFFQm3Pj6_hTPJUrHe0nt0ySwC9IgLUwfxOhVUKNE7_QabdMdoeDVwzF6Cbz-St7nck-cJqLTHQ__a7zP6XotUv2QLkaVn6bR_Oj2iAw5gBH092ZyCtqJ1NRj78rXt5FWfF1nWb0TMZk_xoTJg5x61Sc_XH6__ejSwGsv5-rfaILZzgHSxY9nbaQURuYuSodLhaf5QqHfyFPyIw90SsYH4EX__SXHTJ9io0s4xiY">
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] font-semibold text-amber-900 bg-amber-100 px-2 py-0.5 rounded-full">Amber Warning</span>
+<span class="font-data-mono text-data-mono text-xs text-on-surface-variant">SKU: SN-WHXM5-BLK</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate mt-1">Sony WH-1000XM5 ANC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mumbai Central FC • Bay 4-Row B-Bin 12</span>
+</div>
+</div>
+<!-- Live Stock Telemetry Comparison -->
+<div class="grid grid-cols-3 gap-2 px-space-lg py-space-md bg-surface-container">
+<div class="flex flex-col text-center p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">On-Hand</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">10</span>
+</div>
+<div class="flex flex-col text-center p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">Allocated</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface-variant mt-0.5">6</span>
+</div>
+<div class="flex flex-col text-center p-2 rounded bg-surface-container-lowest">
+<span class="font-label-sm text-[11px] text-amber-900 uppercase font-bold">Current Avail</span>
+<span class="font-headline-sm text-headline-sm font-bold text-amber-900 mt-0.5">4</span>
+</div>
+</div>
+<!-- Adjustment Form Body -->
+<form class="p-space-lg flex flex-col gap-space-md flex-1">
+<!-- Adjustment Type Toggle Pills -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Adjustment Operation Mode</label>
+<div class="grid grid-cols-3 gap-1.5 p-1 rounded-lg bg-surface-container text-center">
+<button class="py-1.5 px-2 rounded-md font-label-sm text-[12px] font-semibold bg-surface-container-lowest text-on-surface shadow-sm transition-all flex items-center justify-center gap-1 text-emerald-800" id="btn-add" type="button">
+<span class="material-symbols-outlined text-sm">add</span> Add Stock
+            </button>
+<button class="py-1.5 px-2 rounded-md font-label-sm text-[12px] font-semibold text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1" id="btn-sub" type="button">
+<span class="material-symbols-outlined text-sm">remove</span> Deduct
+            </button>
+<button class="py-1.5 px-2 rounded-md font-label-sm text-[12px] font-semibold text-on-surface-variant hover:text-on-surface transition-all flex items-center justify-center gap-1" id="btn-set" type="button">
+<span class="material-symbols-outlined text-sm">equal</span> Explicit
+            </button>
+</div>
+</div>
+<!-- Quantity Stepper Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="adjust-qty">Quantity Delta (Units)</label>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Post-Adjust: <strong class="text-emerald-800 font-data-mono" id="post-adjust-preview">24 units</strong></span>
+</div>
+<div class="flex items-center rounded-lg bg-surface-container-low p-1">
+<button class="w-10 h-10 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center hover:bg-surface-container shadow-sm transition-colors" onclick="decrementVal()" type="button">
+<span class="material-symbols-outlined text-base">remove</span>
+</button>
+<input class="flex-1 bg-transparent text-center font-headline-md text-headline-md font-bold text-on-surface focus:outline-none" id="adjust-qty" max="5000" min="1" type="number" value="20">
+<button class="w-10 h-10 rounded-md bg-surface-container-lowest text-on-surface flex items-center justify-center hover:bg-surface-container shadow-sm transition-colors" onclick="incrementVal()" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+</div>
+<!-- Reason Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="adjust-reason">Adjustment Reason Category</label>
+<div class="relative">
+<select class="w-full h-10 px-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm shadow-sm appearance-none focus:outline-none focus:bg-surface-container-lowest" id="adjust-reason">
+<option selected="" value="po">Restock / PO Received (#PO-89410)</option>
+<option value="damaged">Damaged in Warehouse Storage</option>
+<option value="audit">Physical Inventory Audit Correction</option>
+<option value="return">Customer Return - Inspected Restock</option>
+<option value="scrap">Scrap / Defective Quarantine</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Staff Notes -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold" for="staff-notes">Staff Audit Notes &amp; Ref ID</label>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Mandatory for QA</span>
+</div>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest resize-none" id="staff-notes" placeholder="Enter carrier waybill, vendor shipment batch code, or variance inspection notes..." rows="3">Received pallet 4A from Sony India logistics via Delhivery Freight. Verified sealed retail packs.</textarea>
+</div>
+<!-- Quick Summary Note -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+<span>Logged by: <strong>Alex Vance (Super Admin)</strong> via Node WH-FC-MUM</span>
+</div>
+<!-- Action Confirmation -->
+<div class="pt-space-xs flex flex-col gap-2">
+<button class="w-full py-2.5 px-4 rounded-lg bg-secondary-container text-on-primary font-label-md text-label-md font-bold shadow-md hover:bg-secondary transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+<span>Confirm &amp; Log Stock Adjustment</span>
+</button>
+<button class="w-full py-1.5 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm text-center" type="button">
+            Cancel and Discard
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Collapsible: Stock Movement Audit History -->
+<div class="flex flex-col w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Header toggle -->
+<div class="p-space-lg flex items-center justify-between cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors select-none" onclick="toggleAuditLog()">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined p-2 rounded-lg bg-surface-container-lowest text-primary text-xl">history</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Stock Movement Audit History</h2>
+<span class="font-data-mono text-[11px] px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">Live FIFO Journal</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Timestamped immutable ledger of all inbound, outbound, and manual adjustments</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>6 movements recorded today</span>
+<span class="material-symbols-outlined text-lg transition-transform duration-200" id="audit-icon">expand_less</span>
+</div>
+</div>
+<!-- Audit Log Feed -->
+<div class="flex flex-col divide-none" id="audit-feed">
+<!-- Movement 1: Apple Macbook Air -->
+<div class="p-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-emerald-800">+25 units</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">inbound restock for</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">MacBook Air M2 (Silver)</span>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">SKU: AP-MBA-M2-SLV</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">badge</span>
+<strong>Rajesh Kumar</strong> (Inventory Lead)
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                Mumbai Central FC (Bay 12)
+              </span>
+<span>•</span>
+<span>PO Received ref: PO-98214 from Apple Direct</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto font-data-mono text-data-mono text-xs text-on-surface-variant shrink-0">
+<span class="font-bold text-on-surface">Today, 14:32 IST</span>
+<span class="text-[11px]">TxID: #LOG-889104</span>
+</div>
+</div>
+<!-- Movement 2: Damaged / Scrap -->
+<div class="p-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors bg-surface-container-lowest">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-red-100 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">remove_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-error">-2 units</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">quarantined damaged for</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Dell UltraSharp U2723QE</span>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">SKU: DL-U2723QE-IPS</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">badge</span>
+<strong>Pooja Mehta</strong> (QC Auditor)
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                Delhi NCR Hub
+              </span>
+<span>•</span>
+<span>Forklift mast impact damaged outer carton &amp; panel crack</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto font-data-mono text-data-mono text-xs text-on-surface-variant shrink-0">
+<span class="font-bold text-on-surface">Today, 11:15 IST</span>
+<span class="text-[11px]">TxID: #LOG-889042</span>
+</div>
+</div>
+<!-- Movement 3: Audit Correction -->
+<div class="p-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-blue-100 text-blue-800 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">published_with_changes</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm font-semibold text-blue-800">+10 units</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">cycle count audit adjustment for</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-semibold">Keychron Q1 Pro</span>
+<span class="font-data-mono text-data-mono text-[11px] text-on-surface-variant">SKU: KC-Q1PRO-RED</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 font-body-sm text-body-sm text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">badge</span>
+<strong>Vikram Rao</strong> (Floor Manager)
+              </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                Bengaluru North Hub
+              </span>
+<span>•</span>
+<span>Reconciled misfiled bin carton found in Aisle 8</span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto font-data-mono text-data-mono text-xs text-on-surface-variant shrink-0">
+<span class="font-bold text-on-surface">Yesterday, 18:40 IST</span>
+<span class="text-[11px]">TxID: #LOG-888791</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleAuditLog() {
+    const feed = document.getElementById('audit-feed');
+    const icon = document.getElementById('audit-icon');
+    if (feed.classList.contains('hidden')) {
+      feed.classList.remove('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    } else {
+      feed.classList.add('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    }
+  }
+
+  function incrementVal() {
+    const el = document.getElementById('adjust-qty');
+    el.value = parseInt(el.value || 0, 10) + 1;
+    updatePreview();
+  }
+
+  function decrementVal() {
+    const el = document.getElementById('adjust-qty');
+    const val = parseInt(el.value || 0, 10);
+    if (val > 1) {
+      el.value = val - 1;
+      updatePreview();
+    }
+  }
+
+  function updatePreview() {
+    const qty = parseInt(document.getElementById('adjust-qty').value || 0, 10);
+    const preview = document.getElementById('post-adjust-preview');
+    // Assuming base is 4 available
+    preview.innerText = (4 + qty) + ' units';
+  }
+
+  document.getElementById('adjust-qty').addEventListener('input', updatePreview);
+</script></main></div></body></html>

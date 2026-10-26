@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#041b3c", "inverse-on-surface": "#eaf1ff", "secondary": "#9d4300", "secondary-fixed-dim": "#ffb690", "surface-container-high": "#dee9fc", "primary-fixed": "#d7e2ff", "tertiary": "#001341", "on-primary": "#ffffff", "surface-tint": "#4c5e83", "on-surface-variant": "#44474e", "tertiary-fixed-dim": "#b4c5ff", "on-background": "#121c2a", "outline": "#75777f", "on-secondary": "#ffffff", "on-tertiary-container": "#648dff", "tertiary-fixed": "#dbe1ff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "surface-variant": "#d9e3f6", "tertiary-container": "#00256d", "outline-variant": "#c5c6cf", "on-tertiary-fixed": "#00174b", "primary": "#001637", "error": "#ba1a1a", "primary-fixed-dim": "#b4c7f1", "surface-container-low": "#eff4ff", "on-primary-container": "#8093bb", "inverse-primary": "#b4c7f1", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#fd761a", "on-primary-fixed-variant": "#34476a", "on-secondary-fixed": "#341100", "background": "#f8f9ff", "inverse-surface": "#27313f", "secondary-fixed": "#ffdbca", "surface-container": "#e6eeff", "surface-container-highest": "#d9e3f6", "on-secondary-container": "#5c2400", "surface-dim": "#d0dbed", "primary-container": "#172b4d", "error-container": "#ffdad6", "on-surface": "#121c2a", "surface": "#f8f9ff", "on-secondary-fixed-variant": "#783200" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "2rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter": "1rem", "gutter-compact": "0.5rem", "margin-compact": "1rem", "margin": "1.5rem", "space-lg": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "data-mono": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-primary-container z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-[68px] px-space-lg flex items-center gap-space-sm bg-primary border-b border-on-primary-container/20"><img alt="TechMart Admin Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wczr-fct_gd53fh7kedyiQj9z5z_8-tqgjKtU3UFnp5ESJdOeMiKKCtkfyriv-nTvmjjBq4KmWCAMD2ctxAgGhGNo2NpHmGc_Htxbah3GEIRV-jWyxCiuylKjUHTSEGHEyLCy6bvRv7G-p4JGhWaGzY_niplRyh7dKi-yu14NvZeTK2yDpCSsBpwuFcnEkCecCFAhXUVEQCzpi08W6tNR0DoDbaHdYWt6GtTc33HlTnRbm6TY3xtEd4Q"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold truncate">TechMart</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Enterprise Hub</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-md"><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">MAIN MENU</span></div><nav class="flex flex-col gap-0.5 mb-space-lg" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="truncate">Dashboard</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="products" href="#"><span class="truncate">Products</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="categories" href="#"><span class="truncate">Categories</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="inventory" href="#"><span class="truncate">Inventory</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="orders" href="#"><span class="truncate">Orders</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="customers" href="#"><span class="truncate">Customers</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="payments" href="#"><span class="truncate">Payments</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="shipping-and-delivery" href="#"><span class="truncate">Shipping &amp; Delivery</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><span class="truncate">Reports &amp; Analytics</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="external-api-imports" href="#"><span class="truncate">External API Imports</span></a></nav><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">ADMINISTRATION</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="staff-roles" href="#"><span class="truncate">Staff &amp; Roles</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="activity-logs" href="#"><span class="truncate">Activity Logs</span></a><a aria-current="page" class="flex items-center px-space-md py-2 transition-colors bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="notifications" href="#"><span class="truncate">Notifications</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="truncate">Settings</span></a></nav></div><div class="p-space-md border-t border-on-primary-container/20 flex items-center justify-between text-on-primary-container"><span class="font-label-sm text-label-sm">v2.4.0 Engine</span><span class="font-data-mono text-data-mono text-[11px] px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed">Live Sync</span></div></aside><div class="pl-60 min-h-screen flex flex-col"><header class="fixed top-0 left-60 right-0 h-[68px] z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-margin border-b border-surface-container-highest"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-base">home</span><span>/</span><span class="text-on-surface font-semibold">Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low border border-surface-container-highest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:border-secondary transition-all" placeholder="Search product IDs, order IDs, customer names..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-secondary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><button aria-label="Help Center" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM-0elpulo2Hcy1AvMUi_CQO3NPW1-ZcWa6kBGqLq_IAgtZxvt0vh6-UcZ5o0M246PzHj9eKNO_KmxN1fa5bC-zh8TEnqkFRvPlihWR42C1u5-jdhTjOmMWGjdfiOH7W_w1REORuC-dXmwIiUdXnhyKVSjtHZFADKJBsDFTEepC9cQZcfUgwUueLTQPWO_ya9kAwcAVIVdqcndHvtjPREZabhSIiwFioomDlxAoIJZrwylzzm6Wb"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-none">Alex Vance</span><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold leading-none">Super Admin</span></div><span class="font-body-sm text-body-sm text-on-surface-variant leading-none mt-1">alex.vance@techmart.io</span></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">expand_more</span></div></div></header><main class="flex-1 pt-[68px] w-full px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Header & Breadcrumbs Area -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span>Console</span>
+<span class="text-outline">/</span>
+<span>Administration</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-semibold">Notifications</span>
+</div>
+<!-- Main Title & Operational Buttons -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="flex flex-col max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">Operational Notifications &amp; Alert Hub</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Real-time incident stream, fulfillment bottlenecks, payment gateway webhooks, and critical inventory alerts requiring merchant intervention.</p>
+</div>
+<div class="flex items-center flex-wrap gap-space-sm">
+<button class="h-9 px-space-md bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all shadow-sm" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-base">done_all</span>
+<span>Mark All as Read</span>
+</button>
+<button class="h-9 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>Notification Preferences</span>
+</button>
+<button class="h-9 px-space-md bg-secondary hover:bg-secondary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">emergency_share</span>
+<span>Emergency Broadcast</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Severity & Alert Metrics (4 Bento Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-xl">
+<!-- Card 1: Urgent Stockouts & NDR -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-error-container/40 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between relative z-10 mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Urgent Action Required</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-error font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+          Immediate
+        </span>
+</div>
+<div class="relative z-10 flex items-baseline justify-between mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">12 Alerts</span>
+<span class="material-symbols-outlined text-error text-2xl">release_alert</span>
+</div>
+<div class="relative z-10 mt-3 pt-3 bg-surface-container-low/60 rounded px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">8 stockouts + 4 NDR exceptions</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">trending_up</span>+3
+        </span>
+</div>
+</div>
+<!-- Card 2: Gateway & Payment Warnings -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-secondary-fixed/50 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between relative z-10 mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Gateway &amp; Payment Warnings</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-secondary font-bold">Attention</span>
+</div>
+<div class="relative z-10 flex items-baseline justify-between mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">3 Incidents</span>
+<span class="material-symbols-outlined text-secondary text-2xl">account_balance_wallet</span>
+</div>
+<div class="relative z-10 mt-3 pt-3 bg-surface-container-low/60 rounded px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Webhook timeout retries</span>
+<span class="font-data-mono text-data-mono text-secondary font-bold">Razorpay v3</span>
+</div>
+</div>
+<!-- Card 3: Fulfillment Bottlenecks -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-surface-container-highest/70 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between relative z-10 mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Fulfillment Bottlenecks</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-variant text-on-surface-variant font-bold">SLA Breach Risk</span>
+</div>
+<div class="relative z-10 flex items-baseline justify-between mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">7 Orders</span>
+<span class="material-symbols-outlined text-on-surface-variant text-2xl">local_shipping</span>
+</div>
+<div class="relative z-10 mt-3 pt-3 bg-surface-container-low/60 rounded px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Dispatch cutoff in 45 mins</span>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">timer</span>45m SLA
+        </span>
+</div>
+</div>
+<!-- Card 4: Resolved Today -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-3 -top-3 w-20 h-20 bg-primary-fixed/40 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between relative z-10 mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Resolved Today</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">98% Cleaned</span>
+</div>
+<div class="relative z-10 flex items-baseline justify-between mt-1">
+<span class="font-display-lg text-display-lg text-primary font-bold">48 Items</span>
+<span class="material-symbols-outlined text-surface-tint text-2xl">check_circle</span>
+</div>
+<div class="relative z-10 mt-3 pt-3 bg-surface-container-low/60 rounded px-2.5 py-1.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Avg resolution time: 14 mins</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">speed</span>Optimal
+        </span>
+</div>
+</div>
+</div>
+<!-- Operational Filters & Multi-Batch Action Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-lg flex flex-col gap-space-md">
+<!-- Filter Tabs (Horizontal Scrollable) -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1" id="filter-tabs">
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>All Notifications</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-lowest text-primary text-[10px] font-bold">24</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>Unread</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary-container text-on-primary text-[10px] font-bold">12</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>Inventory &amp; Low Stock</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold">8</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>Orders &amp; SLA Risk</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold">5</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>Payments &amp; Chargebacks</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold">4</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>System &amp; API Gateway</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant text-[10px] font-bold">5</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span>Archived / Resolved</span>
+</button>
+</div>
+<!-- Live Search & Bulk Controls Sub-bar -->
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-sm pt-space-xs bg-surface-container-low/40 p-2 rounded-lg">
+<div class="relative flex-1 max-w-lg">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full h-9 pl-9 pr-3 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary transition-all shadow-sm" id="alert-search" placeholder="Filter notifications by SKU, Order ID, carrier, or keyword..." type="text"/>
+</div>
+<!-- Batch Actions -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-2 pl-2 pr-3 py-1 bg-surface-container-lowest rounded-lg shadow-sm">
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" id="select-all-checkbox" type="checkbox"/>
+<label class="font-label-sm text-label-sm text-on-surface select-none cursor-pointer" for="select-all-checkbox">Select All 12 Unread</label>
+</div>
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-sm">archive</span>
+<span>Archive Selected</span>
+</button>
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded-lg flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-sm">assignment_ind</span>
+<span>Assign to Operator</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notifications Feed Area -->
+<div class="flex flex-col gap-space-xl">
+<!-- Today's Section -->
+<div class="flex flex-col gap-space-md">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Today</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold">5 High-Priority Events</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Sync Interval: Live 2s ping</span>
+</div>
+<!-- Alert 1: Critical Stock Exhaustion (Red Critical Theme) -->
+<div class="notification-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start gap-space-md relative overflow-hidden" data-status="unread">
+<!-- Vertical Priority Indicator Strip -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<!-- Left Severity Icon & Visual Anchor -->
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<!-- Central Content Box -->
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-error font-bold">Critical Stockout</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium font-data-mono">SKU: AP-MBA-M2-SLV</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Node: Mumbai FC (WH-FC-MUM)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Today, 15:38 IST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">
+            Critical Stock Exhaustion: Apple MacBook Air M2 (16GB / 512GB)
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            Warehouse WH-FC-MUM reported available inventory has dropped to 0 units while 6 pending orders are awaiting picklist allocation. Auto-reorder trigger activated.
+          </p>
+<!-- Embedded Micro Matrix Pill -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-lg flex flex-wrap items-center justify-between gap-2 max-w-2xl">
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Reserved Backlog: <strong class="text-error font-data-mono">6 Units</strong></span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Primary Supplier ETA: <strong class="text-primary font-data-mono">Tomorrow, 10:00 AM</strong></span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">notification_important</span>High Reorder Priority
+            </span>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center flex-wrap gap-space-sm mt-space-md pt-space-xs">
+<button class="h-8 px-3.5 bg-secondary-container hover:bg-secondary text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">inventory_2</span>
+<span>Open Inventory Matrix</span>
+</button>
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">snooze</span>
+<span>Snooze 1h</span>
+</button>
+<button class="h-8 px-3 text-on-surface-variant hover:text-error hover:bg-error-container/30 font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">close</span>
+<span>Dismiss</span>
+</button>
+</div>
+</div>
+<!-- Right Side Selection Checkbox & Quick Overflow -->
+<div class="flex items-center gap-2 self-start md:self-auto">
+<input class="alert-item-checkbox w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" type="checkbox"/>
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="More options">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Alert 2: Payment Dispute / Webhook Failure (Amber Theme) -->
+<div class="notification-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start gap-space-md relative overflow-hidden" data-status="unread">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-xl">sync_problem</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-fixed text-secondary font-bold">Webhook Timeout</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium font-data-mono">Txn ID: pay_Kk092b77</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Customer: Ananya Sen</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Today, 14:48 IST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">
+            Payment Webhook Timeout: Order #TM-1049 (₹8,995)
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            Razorpay webhook confirmation failed after 3 automatic retries. Customer account debited via UPI, but order status remains unconfirmed.
+          </p>
+<div class="flex items-center flex-wrap gap-space-sm mt-space-md pt-space-xs">
+<button class="h-8 px-3.5 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">replay</span>
+<span>Simulate Webhook Acknowledge</span>
+</button>
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+<span>Inspect in Payments Ledger</span>
+</button>
+<button class="h-8 px-3 text-on-surface-variant hover:text-error hover:bg-error-container/30 font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">close</span>
+<span>Dismiss</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<input class="alert-item-checkbox w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" type="checkbox"/>
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="More options">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Alert 3: NDR Flagged (Red Urgent Theme) -->
+<div class="notification-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start gap-space-md relative overflow-hidden" data-status="unread">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-xl">local_shipping</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-error-container text-error font-bold">NDR Exception</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium font-data-mono">AWB: DT-77192844</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Carrier: DTDC Express</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Today, 13:15 IST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">
+            Non-Delivery Report (NDR) Flagged: Order #TM-1041
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            Delhivery reported address incomplete in Gurugram (Attempt 1 Failed). Customer contact phone required to confirm landmark.
+          </p>
+<div class="flex items-center flex-wrap gap-space-sm mt-space-md pt-space-xs">
+<button class="h-8 px-3.5 bg-secondary-container hover:bg-secondary text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all shadow-sm">
+<span class="material-symbols-outlined text-base">pin_drop</span>
+<span>Resolve NDR / Update Address</span>
+</button>
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">sms</span>
+<span>Contact Customer via SMS</span>
+</button>
+<button class="h-8 px-3 text-on-surface-variant hover:text-error hover:bg-error-container/30 font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">close</span>
+<span>Dismiss</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<input class="alert-item-checkbox w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" type="checkbox"/>
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="More options">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Alert 4: High Value Order Flag (Info Blue Theme) -->
+<div class="notification-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start gap-space-md relative overflow-hidden" data-status="read">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-surface-tint"></div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">Priority Fulfillment</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Customer: Ananya Patel (Tier 2 Priority)</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Today, 13:48 IST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">
+            High-Value Order Placed: ₹1,14,900
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            Order #TM-1047 passed automated fraud scoring (Risk Score: 2/100). Ready for expedited priority fulfillment.
+          </p>
+<div class="flex items-center flex-wrap gap-space-sm mt-space-md pt-space-xs">
+<button class="h-8 px-3.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>View Order Details</span>
+</button>
+<button class="h-8 px-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">archive</span>
+<span>Mark Handled</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<input class="alert-item-checkbox w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" type="checkbox"/>
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="More options">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Alert 5: External API Ingestion Complete (Success Theme) -->
+<div class="notification-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start gap-space-md relative overflow-hidden" data-status="read">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-surface-tint"></div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-xl">cloud_sync</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-bold">Catalog Ingestion</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium font-data-mono">Batch #INGEST-8841-B</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Today, 11:20 IST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">
+            Scheduled Catalog Sync Succeeded: 45 SKUs Mapped
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            DummyJSON Electronics v2.1 sync finished in 4.2s. 45 products ready for staging review, 3 duplicate collisions quarantined.
+          </p>
+<div class="flex items-center flex-wrap gap-space-sm mt-space-md pt-space-xs">
+<button class="h-8 px-3.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">rate_review</span>
+<span>Review Staged Catalog</span>
+</button>
+<button class="h-8 px-3 text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">check</span>
+<span>Acknowledge</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<input class="alert-item-checkbox w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" type="checkbox"/>
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors" title="More options">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Yesterday's Section -->
+<div class="flex flex-col gap-space-md mt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold uppercase tracking-wider">Yesterday (18 Nov)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">2 Resolved Incidents</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All tasks closed</span>
+</div>
+<!-- Alert Yesterday 1: Chargeback notification (Neutral/Resolved State) -->
+<div class="notification-card bg-surface-container-lowest/80 rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row items-start gap-space-md relative overflow-hidden opacity-90" data-status="read">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-xl">credit_card_off</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">Chargeback Inquiry</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-data-mono">Dispute #DSP-902</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">HDFC Bank Merchant Portal</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-data-mono">Yesterday, 19:12 IST</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">
+            Proof of Delivery Submitted: Dispute #DSP-902 Settled in Favor
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 leading-relaxed">
+            The evidence package containing digital signature and geocoded delivery proof was accepted by the issuing bank. Funds released to main escrow.
+          </p>
+<div class="flex items-center flex-wrap gap-space-sm mt-space-md pt-space-xs">
+<button class="h-8 px-3 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-base">description</span>
+<span>View Audit Packet</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start md:self-auto">
+<input class="alert-item-checkbox w-4 h-4 rounded text-secondary focus:ring-secondary-container cursor-pointer" type="checkbox"/>
+<button class="p-1 rounded hover:bg-surface-container text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-lg">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Footer Context -->
+<div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm border-t border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-medium text-on-surface">Queue Consumer Active:</span>
+<span class="font-data-mono">techmart-events-kafka-prod (Cluster IN-BOM-1)</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<span class="hover:text-primary cursor-pointer transition-colors">Export Notification Log (CSV)</span>
+<span>•</span>
+<span class="hover:text-primary cursor-pointer transition-colors">Webhook Latency Monitor</span>
+<span>•</span>
+<span class="hover:text-primary cursor-pointer transition-colors">System Diagnostics</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive micro-interactions for triage
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select All Checkbox Handler
+    const selectAllCheckbox = document.getElementById('select-all-checkbox');
+    const alertCheckboxes = document.querySelectorAll('.alert-item-checkbox');
+    
+    if (selectAllCheckbox) {
+      selectAllCheckbox.addEventListener('change', (e) => {
+        alertCheckboxes.forEach(cb => {
+          cb.checked = e.target.checked;
+        });
+      });
+    }
+
+    // Mark All as Read Button handler
+    const markAllReadBtn = document.getElementById('mark-all-read-btn');
+    if (markAllReadBtn) {
+      markAllReadBtn.addEventListener('click', () => {
+        document.querySelectorAll('.notification-card').forEach(card => {
+          card.classList.remove('opacity-100');
+          card.classList.add('opacity-80');
+          // remove active indicator lines
+          const strip = card.querySelector('.absolute.left-0');
+          if (strip) {
+            strip.classList.remove('bg-error', 'bg-secondary');
+            strip.classList.add('bg-outline-variant');
+          }
+        });
+        markAllReadBtn.innerHTML = '<span class="material-symbols-outlined text-base">check</span><span>All Caught Up</span>';
+        markAllReadBtn.classList.add('bg-surface-container-high', 'text-surface-tint');
+      });
+    }
+
+    // Search filter live response
+    const searchInput = document.getElementById('alert-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase();
+        document.querySelectorAll('.notification-card').forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Tab buttons toggle visual state
+    const tabs = document.querySelectorAll('#filter-tabs button');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.className = 'px-3 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface flex items-center gap-1.5 whitespace-nowrap transition-colors';
+        });
+        tab.className = 'px-3 py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors';
+      });
+    });
+  });
+</script></main></div></body></html>

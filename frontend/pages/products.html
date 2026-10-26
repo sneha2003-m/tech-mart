@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#eff4ff", "tertiary-fixed": "#dbe1ff", "on-tertiary-fixed-variant": "#003ea8", "tertiary": "#001341", "on-tertiary-fixed": "#00174b", "inverse-surface": "#27313f", "primary-container": "#172b4d", "on-error-container": "#93000a", "surface-dim": "#d0dbed", "on-secondary-fixed": "#341100", "secondary-fixed-dim": "#ffb690", "surface-container": "#e6eeff", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdbca", "on-error": "#ffffff", "tertiary-container": "#00256d", "surface": "#f8f9ff", "inverse-primary": "#b4c7f1", "on-surface-variant": "#44474e", "error": "#ba1a1a", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#b4c5ff", "surface-tint": "#4c5e83", "error-container": "#ffdad6", "on-primary-fixed-variant": "#34476a", "primary-fixed": "#d7e2ff", "secondary-container": "#fd761a", "outline-variant": "#c5c6cf", "primary-fixed-dim": "#b4c7f1", "on-primary-fixed": "#041b3c", "on-tertiary-container": "#648dff", "on-primary": "#ffffff", "on-background": "#121c2a", "on-surface": "#121c2a", "surface-container-high": "#dee9fc", "surface-container-highest": "#d9e3f6", "on-primary-container": "#8093bb", "surface-variant": "#d9e3f6", "on-secondary-fixed-variant": "#783200", "primary": "#001637", "inverse-on-surface": "#eaf1ff", "secondary": "#9d4300", "on-secondary-container": "#5c2400", "outline": "#75777f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1.5rem", "gutter-compact": "0.5rem", "space-2xl": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin-compact": "1rem", "gutter": "1rem", "space-lg": "1rem", "space-md": "0.75rem", "space-xl": "1.5rem" }, "fontFamily": { "body-md": ["Inter"], "data-mono": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"] }, "fontSize": { "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-primary-container z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-[68px] px-space-lg flex items-center gap-space-sm bg-primary border-b border-on-primary-container/20"><img alt="TechMart Admin Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wczr-fct_gd53fh7kedyiQj9z5z_8-tqgjKtU3UFnp5ESJdOeMiKKCtkfyriv-nTvmjjBq4KmWCAMD2ctxAgGhGNo2NpHmGc_Htxbah3GEIRV-jWyxCiuylKjUHTSEGHEyLCy6bvRv7G-p4JGhWaGzY_niplRyh7dKi-yu14NvZeTK2yDpCSsBpwuFcnEkCecCFAhXUVEQCzpi08W6tNR0DoDbaHdYWt6GtTc33HlTnRbm6TY3xtEd4Q"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold truncate">TechMart</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Enterprise Hub</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-md"><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">MAIN MENU</span></div><nav class="flex flex-col gap-0.5 mb-space-lg" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="truncate">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2 transition-colors bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="products" href="#"><span class="material-symbols-outlined text-lg">inventory_2</span><span class="truncate">Products</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-lg">category</span><span class="truncate">Categories</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="inventory" href="#"><span class="material-symbols-outlined text-lg">warehouse</span><span class="truncate">Inventory</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="orders" href="#"><span class="material-symbols-outlined text-lg">receipt_long</span><span class="truncate">Orders</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="customers" href="#"><span class="material-symbols-outlined text-lg">group</span><span class="truncate">Customers</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="payments" href="#"><span class="material-symbols-outlined text-lg">credit_card</span><span class="truncate">Payments</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="shipping-and-delivery" href="#"><span class="material-symbols-outlined text-lg">local_shipping</span><span class="truncate">Shipping &amp; Delivery</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-lg">insights</span><span class="truncate">Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="external-api-imports" href="#"><span class="material-symbols-outlined text-lg">sync_alt</span><span class="truncate">External API Imports</span></a></nav><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">ADMINISTRATION</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="staff-and-roles" href="#"><span class="material-symbols-outlined text-lg">badge</span><span class="truncate">Staff &amp; Roles</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="activity-logs" href="#"><span class="material-symbols-outlined text-lg">history</span><span class="truncate">Activity Logs</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-lg">notifications</span><span class="truncate">Notifications</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-lg">settings</span><span class="truncate">Settings</span></a></nav></div><div class="p-space-md border-t border-on-primary-container/20 flex items-center justify-between text-on-primary-container"><span class="font-label-sm text-label-sm">v2.4.0 Engine</span><span class="font-data-mono text-data-mono text-[11px] px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed">Live Sync</span></div></aside><div class="pl-60 min-h-screen flex flex-col"><header class="fixed top-0 left-60 right-0 h-[68px] z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-margin border-b border-surface-container-highest"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-base">home</span><span>/</span><span class="text-on-surface font-semibold">Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low border border-surface-container-highest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:border-secondary transition-all" placeholder="Search product IDs, order IDs, customer names..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-secondary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><button aria-label="Help Center" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM-0elpulo2Hcy1AvMUi_CQO3NPW1-ZcWa6kBGqLq_IAgtZxvt0vh6-UcZ5o0M246PzHj9eKNO_KmxN1fa5bC-zh8TEnqkFRvPlihWR42C1u5-jdhTjOmMWGjdfiOH7W_w1REORuC-dXmwIiUdXnhyKVSjtHZFADKJBsDFTEepC9cQZcfUgwUueLTQPWO_ya9kAwcAVIVdqcndHvtjPREZabhSIiwFioomDlxAoIJZrwylzzm6Wb"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-none">Alex Vance</span><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold leading-none">Super Admin</span></div><span class="font-body-sm text-body-sm text-on-surface-variant leading-none mt-1">alex.vance@techmart.io</span></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">expand_more</span></div></div></header><main class="flex-1 pt-[68px] w-full px-margin py-margin"><div class="flex flex-col w-full relative">
+<!-- Top Utility Context Bar / Stats Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">Products</h1>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-semibold">428 Active SKUs</span>
+</div>
+<div class="hidden lg:flex items-center gap-1.5 text-on-surface-variant text-body-sm font-body-sm pl-space-md border-l-0">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Real-time Sync Active</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 hover:bg-primary transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">cloud_download</span>
+<span>Import from DummyJSON / CSV</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-secondary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 hover:opacity-90 transition-all shadow-sm" id="open-drawer-btn" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+<span>+ Add New Product</span>
+</button>
+</div>
+</div>
+<!-- Filter & Search Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search Bar -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-lg pointer-events-none">search</span>
+<input class="w-full h-9 pl-9 pr-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest transition-all" id="product-search-input" placeholder="Search by product name, SKU, or brand..." type="text"/>
+</div>
+<!-- Multi-Filter Cluster -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Category Filter -->
+<div class="relative">
+<select class="appearance-none h-9 pl-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer">
+<option value="all">Category: All</option>
+<option value="laptops">Laptops</option>
+<option value="smartphones">Smartphones</option>
+<option value="audio">Audio</option>
+<option value="accessories">Accessories</option>
+<option value="displays">Displays</option>
+<option value="peripherals">Peripherals</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-base pointer-events-none">expand_more</span>
+</div>
+<!-- Stock Status Filter -->
+<div class="relative">
+<select class="appearance-none h-9 pl-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer">
+<option value="all">Stock Status: All</option>
+<option value="in_stock">In Stock (&gt;10)</option>
+<option value="low_stock">Low Stock (1-10)</option>
+<option value="out_of_stock">Out of Stock (0)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-base pointer-events-none">expand_more</span>
+</div>
+<!-- Product Status Filter -->
+<div class="relative">
+<select class="appearance-none h-9 pl-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer">
+<option value="all">Status: All</option>
+<option value="published">Published / Active</option>
+<option value="draft">Draft</option>
+<option value="archived">Archived</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-base pointer-events-none">expand_more</span>
+</div>
+<!-- Reset Filters Button -->
+<button class="h-9 px-3 rounded-lg text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-low hover:text-on-surface flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">restart_alt</span>
+<span>Reset Filters</span>
+</button>
+</div>
+</div>
+<!-- Primary Content Area: Split View Grid when Drawer open, or Full View -->
+<div class="w-full flex items-start gap-space-lg relative">
+<!-- Main Data Table Container -->
+<div class="w-full transition-all duration-300" id="table-wrapper">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header & Controls -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant uppercase font-label-sm text-label-sm h-10 select-none">
+<th class="w-10 px-3 text-center">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</th>
+<th class="px-3 min-w-[240px]">Product</th>
+<th class="px-3 min-w-[120px]">SKU</th>
+<th class="px-3 min-w-[110px]">Category</th>
+<th class="px-3 min-w-[110px] text-right">Selling Price</th>
+<th class="px-3 min-w-[100px] text-right">Cost Price</th>
+<th class="px-3 min-w-[120px] text-center">Available Stock</th>
+<th class="px-3 min-w-[90px] text-center">Status</th>
+<th class="px-3 min-w-[110px]">Last Updated</th>
+<th class="px-3 w-24 text-right pr-4">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Item 1: MacBook Air M2 -->
+<tr class="h-14 hover:bg-surface-container-low/70 transition-colors group cursor-pointer" onclick="openProductDrawer('Apple MacBook Air M2 (13.6-inch, 16GB/512GB)', 'AP-MBA-M2-SLV', 'Laptops', 'Apple', '1,14,900', '98,000', '18', '5')">
+<td class="px-3 text-center" onclick="event.stopPropagation()">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</td>
+<td class="px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Sleek silver Apple MacBook Air M2 laptop displayed open on a minimal dark blue studio podium, crisp modern tech product photography, clean studio illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDHbJBo78L2P3LMLc2Vu4QWsjklZNVcVQi8os588ppPxQNJhP0FRJS6MKZidijU9b8-NMMl2AFBeFasE0dcWXnJdACe4SXxRuH2ng3x-ismd-JSTjMf_pdru1D7HQWcS4WXO-Ghnlxx0Kd0gQQd15A37kVwRfDMe5fKEQa7hl7h0n8xMbW0z-S2YGBm17DseBUwoT9jsGbZTtZzXopB9BYDCS_hz-ZxAsvLJV3zFVn0MkyTF1MQES6"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface truncate group-hover:text-secondary-container transition-colors">Apple MacBook Air M2 (13.6-inch, 16GB/512GB)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Apple Inc.</span>
+</div>
+</div>
+</td>
+<td class="px-3 font-data-mono text-data-mono text-primary font-medium">AP-MBA-M2-SLV</td>
+<td class="px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px]">Laptops</span>
+</td>
+<td class="px-3 text-right font-data-mono text-data-mono font-semibold text-on-surface">₹1,14,900</td>
+<td class="px-3 text-right font-data-mono text-data-mono text-on-surface-variant">₹98,000</td>
+<td class="px-3 text-center">
+<div class="inline-flex items-center gap-1.5 font-data-mono text-data-mono">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>18 units</span>
+</div>
+</td>
+<td class="px-3 text-center">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-3 font-body-sm text-[11px] text-on-surface-variant">Today, 14:20</td>
+<td class="px-3 text-right pr-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="View Details" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-secondary-container hover:bg-surface-container" title="Edit Product" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container" title="Archive" type="button">
+<span class="material-symbols-outlined text-base">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: Sony WH-1000XM5 -->
+<tr class="h-14 hover:bg-surface-container-low/70 transition-colors group cursor-pointer bg-surface-container-lowest" onclick="openProductDrawer('Sony WH-1000XM5 Wireless Headphones', 'SN-WHXM5-BLK', 'Audio', 'Sony', '29,990', '23,450', '4', '8')">
+<td class="px-3 text-center" onclick="event.stopPropagation()">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</td>
+<td class="px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Matte black Sony WH-1000XM5 over-ear wireless headphones resting on an architectural plinth, premium industrial tech design, soft neutral gradient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV-XqcrE-5nTXA2UJt08FwCYcmltx4zicvTLriybyXOsAqFTxr7hk_1ekWWC-T9OewGQRAStWHnkfnCSYBLEx22MmGR_NXIyQo8_hImPVmfnAoVA9ruINcgz-a9zKzlPPJZ9SPQLxuQKE9dmrUX40FsyWmIxOcBWrW9TJoeN9PDv-kweSG--VIzfITHo7eeajBWzDrICJF_9uf7gj6BIgn10XYy5rwXpQCmwjs7c6ewB0xVRIWf-69"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface truncate group-hover:text-secondary-container transition-colors">Sony WH-1000XM5 Wireless Headphones</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Sony Audio</span>
+</div>
+</div>
+</td>
+<td class="px-3 font-data-mono text-data-mono text-primary font-medium">SN-WHXM5-BLK</td>
+<td class="px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px]">Audio</span>
+</td>
+<td class="px-3 text-right font-data-mono text-data-mono font-semibold text-on-surface">₹29,990</td>
+<td class="px-3 text-right font-data-mono text-data-mono text-on-surface-variant">₹23,450</td>
+<td class="px-3 text-center">
+<div class="inline-flex items-center gap-1.5 font-data-mono text-data-mono text-amber-700 font-medium">
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+<span>4 (Low Stock)</span>
+</div>
+</td>
+<td class="px-3 text-center">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-3 font-body-sm text-[11px] text-on-surface-variant">Yesterday</td>
+<td class="px-3 text-right pr-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="View Details" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-secondary-container hover:bg-surface-container" title="Edit Product" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container" title="Archive" type="button">
+<span class="material-symbols-outlined text-base">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: Samsung Galaxy S24 Ultra -->
+<tr class="h-14 hover:bg-surface-container-low/70 transition-colors group cursor-pointer" onclick="openProductDrawer('Samsung Galaxy S24 Ultra (512GB Titanium)', 'SM-S24U-TIT', 'Smartphones', 'Samsung', '1,29,999', '1,12,000', '32', '10')">
+<td class="px-3 text-center" onclick="event.stopPropagation()">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</td>
+<td class="px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Titanium gray Samsung Galaxy S24 Ultra flagship mobile smartphone with stylus pen on high-end glass table, sharp metallic reflections, cinematic corporate lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv7AN9Gvtq9oztgBXJNgUfiWsxwXgyKGAbG7sxfJcZUq9qd52qPrV-jbKKqV17cg3ICLYQAF6STCnOhLml_KbO93oL4eCPkfELFsSA02FsPgNyf2KusrvUH7Isw-bcQ6XaGSA5XkbwOLP-wurG04POTiEftvHOubDlE5Ozd5kbs9Ty38s4oaNwWUdiMQ1n4s7oMeP5DktL1lFZ_AzrP_5c1C_e0cGkPCkksIuyEfEJk4HIcphNsPNy"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface truncate group-hover:text-secondary-container transition-colors">Samsung Galaxy S24 Ultra (512GB Titanium)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Samsung India</span>
+</div>
+</div>
+</td>
+<td class="px-3 font-data-mono text-data-mono text-primary font-medium">SM-S24U-TIT</td>
+<td class="px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px]">Smartphones</span>
+</td>
+<td class="px-3 text-right font-data-mono text-data-mono font-semibold text-on-surface">₹1,29,999</td>
+<td class="px-3 text-right font-data-mono text-data-mono text-on-surface-variant">₹1,12,000</td>
+<td class="px-3 text-center">
+<div class="inline-flex items-center gap-1.5 font-data-mono text-data-mono">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>32 units</span>
+</div>
+</td>
+<td class="px-3 text-center">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-3 font-body-sm text-[11px] text-on-surface-variant">14 May 2024</td>
+<td class="px-3 text-right pr-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="View Details" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-secondary-container hover:bg-surface-container" title="Edit Product" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container" title="Archive" type="button">
+<span class="material-symbols-outlined text-base">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: Logitech MX Master 3S -->
+<tr class="h-14 hover:bg-surface-container-low/70 transition-colors group cursor-pointer bg-surface-container-lowest" onclick="openProductDrawer('Logitech MX Master 3S Wireless Mouse', 'LG-MX3S-GRY', 'Accessories', 'Logitech', '8,495', '6,200', '0', '5')">
+<td class="px-3 text-center" onclick="event.stopPropagation()">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</td>
+<td class="px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Ergonomic graphite Logitech MX Master 3S wireless productivity mouse on dark walnut desk mat, detailed macro focus, crisp commercial studio product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIpM8t4uDl8WO8pQl2Ub1UJiQhHyDasTZ2YRl4cyKXqv12aTpsa3QFU6jiwFmS8AhprUyM83hzOvacwPgkU_-78-8jgHkpX43zY_qv1nxL_42gESk_IrIHb-oXxIFSPuTYl3gCebXNhIyZGuUlSuQpRudF7pYwLfIC85lPFVKbwdb3OSmVGiIgiutAynG9T9G9PIj4Xk8HCUFckoEd4sxy0dS9ZJLtB2-2uDx7wSvyzTmKdjTd60pz"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface truncate group-hover:text-secondary-container transition-colors">Logitech MX Master 3S Wireless Mouse</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Logitech</span>
+</div>
+</div>
+</td>
+<td class="px-3 font-data-mono text-data-mono text-primary font-medium">LG-MX3S-GRY</td>
+<td class="px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px]">Accessories</span>
+</td>
+<td class="px-3 text-right font-data-mono text-data-mono font-semibold text-on-surface">₹8,495</td>
+<td class="px-3 text-right font-data-mono text-data-mono text-on-surface-variant">₹6,200</td>
+<td class="px-3 text-center">
+<div class="inline-flex items-center gap-1.5 font-data-mono text-data-mono text-red-600 font-semibold">
+<span class="w-2 h-2 rounded-full bg-red-500"></span>
+<span>0 (Out of stock)</span>
+</div>
+</td>
+<td class="px-3 text-center">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-3 font-body-sm text-[11px] text-on-surface-variant">12 May 2024</td>
+<td class="px-3 text-right pr-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="View Details" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-secondary-container hover:bg-surface-container" title="Edit Product" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container" title="Archive" type="button">
+<span class="material-symbols-outlined text-base">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: Dell UltraSharp 27" 4K Monitor -->
+<tr class="h-14 hover:bg-surface-container-low/70 transition-colors group cursor-pointer" onclick="openProductDrawer('Dell UltraSharp 27 4K USB-C Monitor', 'DL-U2723QE', 'Displays', 'Dell', '54,200', '43,800', '12', '4')">
+<td class="px-3 text-center" onclick="event.stopPropagation()">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</td>
+<td class="px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Dell UltraSharp 27-inch 4K borderless designer monitor showing vibrant abstract color grading software, platinum silver stand, architectural minimal interior setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAA1zx-YJnWfc4ou5kBsdPIIHP405J3dRAS42DOUKXej7Dj6qgcyHv4Yar87HxoabN9N3Djk_NhsYptlEj977aQsiAGorMJdtjIc8oX33hMRESBtJr-I6lbl8EoeaKYWuY7C37QHuE170XcEZCijxc-ItInUnZjvigjqX1tJsFEbi2H4Z6YDZ5zPtKBqiwN4e9oelOAFkhtlxgvguJS4QUS3aJ2rtlnm7dCZ6pUrHfOFpWXHoMlkgC"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface truncate group-hover:text-secondary-container transition-colors">Dell UltraSharp 27" 4K USB-C Monitor</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Dell Peripherals</span>
+</div>
+</div>
+</td>
+<td class="px-3 font-data-mono text-data-mono text-primary font-medium">DL-U2723QE</td>
+<td class="px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px]">Displays</span>
+</td>
+<td class="px-3 text-right font-data-mono text-data-mono font-semibold text-on-surface">₹54,200</td>
+<td class="px-3 text-right font-data-mono text-data-mono text-on-surface-variant">₹43,800</td>
+<td class="px-3 text-center">
+<div class="inline-flex items-center gap-1.5 font-data-mono text-data-mono">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>12 units</span>
+</div>
+</td>
+<td class="px-3 text-center">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-3 font-body-sm text-[11px] text-on-surface-variant">10 May 2024</td>
+<td class="px-3 text-right pr-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="View Details" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-secondary-container hover:bg-surface-container" title="Edit Product" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container" title="Archive" type="button">
+<span class="material-symbols-outlined text-base">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 6: Keychron Q1 Pro Mechanical Keyboard -->
+<tr class="h-14 hover:bg-surface-container-low/70 transition-colors group cursor-pointer bg-surface-container-lowest" onclick="openProductDrawer('Keychron Q1 Pro Wireless Mechanical Keyboard', 'KC-Q1P-RGB', 'Peripherals', 'Keychron', '16,999', '12,900', '25', '6')">
+<td class="px-3 text-center" onclick="event.stopPropagation()">
+<input class="rounded accent-secondary-container cursor-pointer w-3.5 h-3.5" type="checkbox"/>
+</td>
+<td class="px-3">
+<div class="flex items-center gap-space-sm">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container shrink-0" data-alt="Keychron Q1 Pro premium aluminum wireless mechanical keyboard with custom spherical keycaps and soft RGB underglow on a clean desk, top down perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU_AbVa-m9b_6nNU2U8RexG004oMOaliAiQku9UCGCXX4gCq8LwZiBI3l6VflcPZ-27ihDZq8GeuzHSVgSXmBDwbx_UAm4uyc_VioWWicN85SQ8c_CEHXc6xoWYBRLovprFNDMOSYRBGhMVQhQsvZpo3myhOdL5PdGN3H0KJc2A5CnXZht-SJLuaJ3BE2-vS5T5pcSsFkbVVTElX4Pt67k5qSUxRwgdxLWjTecFD57Jkuy3WFMWIK5"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface truncate group-hover:text-secondary-container transition-colors">Keychron Q1 Pro Wireless Mechanical Keyboard</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Keychron Custom</span>
+</div>
+</div>
+</td>
+<td class="px-3 font-data-mono text-data-mono text-primary font-medium">KC-Q1P-RGB</td>
+<td class="px-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px]">Peripherals</span>
+</td>
+<td class="px-3 text-right font-data-mono text-data-mono font-semibold text-on-surface">₹16,999</td>
+<td class="px-3 text-right font-data-mono text-data-mono text-on-surface-variant">₹12,900</td>
+<td class="px-3 text-center">
+<div class="inline-flex items-center gap-1.5 font-data-mono text-data-mono">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span>25 units</span>
+</div>
+</td>
+<td class="px-3 text-center">
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-3 font-body-sm text-[11px] text-on-surface-variant">08 May 2024</td>
+<td class="px-3 text-right pr-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container" title="View Details" type="button">
+<span class="material-symbols-outlined text-base">visibility</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-secondary-container hover:bg-surface-container" title="Edit Product" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-error hover:bg-surface-container" title="Archive" type="button">
+<span class="material-symbols-outlined text-base">archive</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Clean Pagination Bar -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm select-none">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>Showing <strong class="text-on-surface font-semibold">1-10</strong> of <strong class="text-on-surface font-semibold">428</strong> products</span>
+<span class="hidden md:inline text-surface-container-highest">|</span>
+<span class="hidden md:inline">Rows per page:</span>
+<select class="hidden md:inline bg-surface-container-lowest rounded px-2 py-0.5 text-on-surface text-body-sm focus:outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+<!-- Page Controls -->
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-lg leading-none">first_page</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-lg leading-none">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary-container text-on-primary font-semibold flex items-center justify-center" type="button">1</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface font-semibold flex items-center justify-center" type="button">2</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface font-semibold flex items-center justify-center" type="button">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-7 h-7 rounded hover:bg-surface-container text-on-surface font-semibold flex items-center justify-center" type="button">43</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-lg leading-none">chevron_right</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-lg leading-none">last_page</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide-Out Drawer Preview: Add / Edit Product Details -->
+<div class="fixed top-0 right-0 h-screen w-full max-w-[480px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col" id="product-drawer">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold" id="drawer-title">Add / Edit Product Details</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Configure catalog metadata, pricing tier, and inventory thresholds.</span>
+</div>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" id="close-drawer-btn" type="button">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<!-- Drawer Scrollable Form Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md">
+<!-- Product Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Product Title *</label>
+<input class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest" id="drawer-name" placeholder="e.g. Apple MacBook Air M2 (13.6-inch, 16GB/512GB)" type="text" value="Apple MacBook Air M2 (13.6-inch, 16GB/512GB)"/>
+</div>
+<!-- 2-Col: SKU & Brand -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">SKU Code *</label>
+<input class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest" id="drawer-sku" placeholder="e.g. AP-MBA-M2-SLV" type="text" value="AP-MBA-M2-SLV"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Brand / Manufacturer *</label>
+<input class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest" id="drawer-brand" placeholder="e.g. Apple Inc." type="text" value="Apple"/>
+</div>
+</div>
+<!-- Category Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Category *</label>
+<div class="relative">
+<select class="w-full appearance-none h-9 pl-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none cursor-pointer" id="drawer-category">
+<option selected="" value="Laptops">Laptops &amp; Ultrabooks</option>
+<option value="Smartphones">Smartphones &amp; Mobile</option>
+<option value="Audio">Audio &amp; Headphones</option>
+<option value="Accessories">Accessories &amp; Cables</option>
+<option value="Displays">Displays &amp; Monitors</option>
+<option value="Peripherals">Keyboards &amp; Peripherals</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-base pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- 2-Col: Selling Price & Cost Price (INR Format) -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Selling Price (₹) *</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant font-data-mono text-sm">₹</span>
+<input class="w-full h-9 pl-7 pr-3 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono font-semibold focus:outline-none focus:bg-surface-container-lowest" id="drawer-selling-price" placeholder="1,14,900" type="text" value="1,14,900"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Cost Price (₹)</label>
+<div class="relative">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant font-data-mono text-sm">₹</span>
+<input class="w-full h-9 pl-7 pr-3 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest" id="drawer-cost-price" placeholder="98,000" type="text" value="98,000"/>
+</div>
+</div>
+</div>
+<!-- 2-Col: Stock Quantity & Low-Stock Threshold -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Stock Quantity *</label>
+<input class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest" id="drawer-stock" placeholder="18" type="number" value="18"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Alert Threshold</label>
+<input class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-data-mono text-data-mono focus:outline-none focus:bg-surface-container-lowest" id="drawer-threshold" placeholder="5" type="number" value="5"/>
+</div>
+</div>
+<!-- Image URL / Upload Box -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Product Visual Asset</label>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors group">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform mb-1.5">
+<span class="material-symbols-outlined text-xl">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-medium">Drag &amp; drop product image here, or <span class="text-secondary-container">Browse</span></p>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">PNG, JPG, WebP up to 5MB (1000x1000 recommended)</span>
+</div>
+<div class="relative mt-1">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-outline text-base">link</span>
+<input class="w-full h-8 pl-8 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-[12px] focus:outline-none" placeholder="https://cdn.techmart.io/products/macbook-air-m2.webp" type="url"/>
+</div>
+</div>
+<!-- Status Radio Tags -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase tracking-wider">Visibility Status</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-surface-container-low cursor-pointer has-[:checked]:bg-emerald-100 has-[:checked]:text-emerald-900 transition-all">
+<input checked="" class="hidden" name="product_status" type="radio" value="active"/>
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-md text-label-md font-semibold">Active</span>
+</label>
+<label class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-surface-container-low cursor-pointer has-[:checked]:bg-surface-container-high has-[:checked]:text-on-surface transition-all">
+<input class="hidden" name="product_status" type="radio" value="draft"/>
+<span class="w-2 h-2 rounded-full bg-on-surface-variant"></span>
+<span class="font-label-md text-label-md font-semibold">Draft</span>
+</label>
+<label class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-surface-container-low cursor-pointer has-[:checked]:bg-amber-100 has-[:checked]:text-amber-900 transition-all">
+<input class="hidden" name="product_status" type="radio" value="archived"/>
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-label-md text-label-md font-semibold">Archived</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Pinned Bottom Action Bar -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-end gap-space-sm shadow-[0_-4px_12px_rgba(0,0,0,0.03)]">
+<button class="h-9 px-space-md rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors" id="cancel-drawer-btn" type="button">
+          Cancel
+        </button>
+<button class="h-9 px-space-xl rounded-lg bg-secondary-container text-on-primary font-label-md text-label-md hover:opacity-90 transition-all shadow-sm flex items-center gap-1.5" id="save-product-btn" type="button">
+<span class="material-symbols-outlined text-base">save</span>
+<span>Save Product</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Overlay Backdrop for Drawer -->
+<div class="fixed inset-0 bg-[#0F172A]/40 z-40 hidden transition-opacity duration-300" id="drawer-backdrop">
+</div>
+</div>
+<script>
+  (function initProductDrawerBehavior() {
+    const drawer = document.getElementById('product-drawer');
+    const backdrop = document.getElementById('drawer-backdrop');
+    const openBtn = document.getElementById('open-drawer-btn');
+    const closeBtn = document.getElementById('close-drawer-btn');
+    const cancelBtn = document.getElementById('cancel-drawer-btn');
+    const saveBtn = document.getElementById('save-product-btn');
+
+    function openDrawer(isNew = false) {
+      if (isNew) {
+        document.getElementById('drawer-title').innerText = 'Add New Product';
+        document.getElementById('drawer-name').value = '';
+        document.getElementById('drawer-sku').value = '';
+        document.getElementById('drawer-brand').value = '';
+        document.getElementById('drawer-selling-price').value = '';
+        document.getElementById('drawer-cost-price').value = '';
+        document.getElementById('drawer-stock').value = '';
+        document.getElementById('drawer-threshold').value = '5';
+      }
+      backdrop.classList.remove('hidden');
+      drawer.classList.remove('translate-x-full');
+    }
+
+    function closeDrawer() {
+      drawer.classList.add('translate-x-full');
+      backdrop.classList.add('hidden');
+    }
+
+    window.openProductDrawer = function(title, sku, category, brand, sp, cp, stock, alertTh) {
+      document.getElementById('drawer-title').innerText = 'Edit Product Details';
+      document.getElementById('drawer-name').value = title || '';
+      document.getElementById('drawer-sku').value = sku || '';
+      document.getElementById('drawer-brand').value = brand || '';
+      document.getElementById('drawer-selling-price').value = sp || '';
+      document.getElementById('drawer-cost-price').value = cp || '';
+      document.getElementById('drawer-stock').value = stock || '';
+      document.getElementById('drawer-threshold').value = alertTh || '5';
+      
+      const catSelect = document.getElementById('drawer-category');
+      if (catSelect && category) {
+        for (let i = 0; i < catSelect.options.length; i++) {
+          if (catSelect.options[i].value.toLowerCase() === category.toLowerCase()) {
+            catSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      openDrawer(false);
+    };
+
+    if (openBtn) openBtn.addEventListener('click', () => openDrawer(true));
+    if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+    if (cancelBtn) cancelBtn.addEventListener('click', closeDrawer);
+    if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">sync</span><span>Saving...</span>';
+        setTimeout(() => {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-base">check</span><span>Saved!</span>';
+          setTimeout(() => {
+            closeDrawer();
+            saveBtn.innerHTML = '<span class="material-symbols-outlined text-base">save</span><span>Save Product</span>';
+          }, 600);
+        }, 500);
+      });
+    }
+
+    // Quick Live Search filter micro-interaction
+    const searchInput = document.getElementById('product-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase();
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          if (text.includes(query)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+  })();
+</script></main></div></body></html>

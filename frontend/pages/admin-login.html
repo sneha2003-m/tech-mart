@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f6fa" />
+    <title>Administrator sign in | TechMart</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/admin-login.css" />
+    <script src="assets/js/admin-login.js" defer></script>
+  </head>
+  <body>
+    <main class="login-layout">
+      <section class="login-card" aria-labelledby="login-title">
+        <a class="brand" href="index.html" aria-label="TechMart Admin home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>TechMart <span class="brand-light">Admin</span></span>
+        </a>
+
+        <div class="login-intro">
+          <span class="eyebrow">Admin operations</span>
+          <h1 id="login-title">Sign in to your workspace</h1>
+          <p>Use your authorised TechMart account to manage day-to-day operations.</p>
+        </div>
+
+        <form id="login-form" novalidate>
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input
+              autocomplete="username"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="name@techmart.in"
+              required
+              type="email"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password</label>
+            <div class="password-control">
+              <input
+                autocomplete="current-password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+                type="password"
+              />
+              <button
+                aria-label="Show password"
+                aria-pressed="false"
+                class="password-toggle"
+                id="password-toggle"
+                type="button"
+              >Show</button>
+            </div>
+          </div>
+
+          <label class="remember-option" for="remember-device">
+            <input class="form-check-input" id="remember-device" name="rememberDevice" type="checkbox" />
+            <span>Remember this session on this device</span>
+          </label>
+
+          <p class="form-message" id="login-message" role="alert" hidden></p>
+
+          <button class="btn btn-primary submit-button" id="submit-button" type="submit">
+            Sign in
+          </button>
+        </form>
+
+        <p class="login-footer">Access is limited to authorised staff.</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#041b3c", "inverse-on-surface": "#eaf1ff", "secondary": "#9d4300", "secondary-fixed-dim": "#ffb690", "surface-container-high": "#dee9fc", "primary-fixed": "#d7e2ff", "tertiary": "#001341", "on-primary": "#ffffff", "surface-tint": "#4c5e83", "on-surface-variant": "#44474e", "tertiary-fixed-dim": "#b4c5ff", "on-background": "#121c2a", "outline": "#75777f", "on-secondary": "#ffffff", "on-tertiary-container": "#648dff", "tertiary-fixed": "#dbe1ff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface-bright": "#f8f9ff", "surface-variant": "#d9e3f6", "tertiary-container": "#00256d", "outline-variant": "#c5c6cf", "on-tertiary-fixed": "#00174b", "primary": "#001637", "error": "#ba1a1a", "primary-fixed-dim": "#b4c7f1", "surface-container-low": "#eff4ff", "on-primary-container": "#8093bb", "inverse-primary": "#b4c7f1", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#003ea8", "secondary-container": "#fd761a", "on-primary-fixed-variant": "#34476a", "on-secondary-fixed": "#341100", "background": "#f8f9ff", "inverse-surface": "#27313f", "secondary-fixed": "#ffdbca", "surface-container": "#e6eeff", "surface-container-highest": "#d9e3f6", "on-secondary-container": "#5c2400", "surface-dim": "#d0dbed", "primary-container": "#172b4d", "error-container": "#ffdad6", "on-surface": "#121c2a", "surface": "#f8f9ff", "on-secondary-fixed-variant": "#783200" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "2rem", "space-xs": "0.25rem", "space-xl": "1.5rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter": "1rem", "gutter-compact": "0.5rem", "margin-compact": "1rem", "margin": "1.5rem", "space-lg": "1rem" }, "fontFamily": { "headline-md": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"], "headline-lg": ["Inter"], "body-md": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "data-mono": ["Inter"], "label-sm": ["Inter"] }, "fontSize": { "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-60 bg-primary-container z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-[68px] px-space-lg flex items-center gap-space-sm bg-primary border-b border-on-primary-container/20"><img alt="TechMart Admin Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wczr-fct_gd53fh7kedyiQj9z5z_8-tqgjKtU3UFnp5ESJdOeMiKKCtkfyriv-nTvmjjBq4KmWCAMD2ctxAgGhGNo2NpHmGc_Htxbah3GEIRV-jWyxCiuylKjUHTSEGHEyLCy6bvRv7G-p4JGhWaGzY_niplRyh7dKi-yu14NvZeTK2yDpCSsBpwuFcnEkCecCFAhXUVEQCzpi08W6tNR0DoDbaHdYWt6GtTc33HlTnRbm6TY3xtEd4Q"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold truncate">TechMart</span><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Enterprise Hub</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-md"><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">MAIN MENU</span></div><nav class="flex flex-col gap-0.5 mb-space-lg" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="dashboard" href="#"><span class="truncate">Dashboard</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="products" href="#"><span class="truncate">Products</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="categories" href="#"><span class="truncate">Categories</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="inventory" href="#"><span class="truncate">Inventory</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="orders" href="#"><span class="truncate">Orders</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="customers" href="#"><span class="truncate">Customers</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="payments" href="#"><span class="truncate">Payments</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="shipping-and-delivery" href="#"><span class="truncate">Shipping &amp; Delivery</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="reports-and-analytics" href="#"><span class="truncate">Reports &amp; Analytics</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="external-api-imports" href="#"><span class="truncate">External API Imports</span></a></nav><div class="px-space-sm pb-space-xs"><span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider block">ADMINISTRATION</span></div><nav class="flex flex-col gap-0.5" data-active-classes="bg-secondary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="staff-roles" href="#"><span class="truncate">Staff &amp; Roles</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="activity-logs" href="#"><span class="truncate">Activity Logs</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="notifications" href="#"><span class="truncate">Notifications</span></a><a class="flex items-center px-space-md py-2 rounded-lg font-body-md text-body-md text-primary-fixed hover:bg-tertiary-container hover:text-on-primary transition-colors" data-path="settings" href="#"><span class="truncate">Settings</span></a></nav></div><div class="p-space-md border-t border-on-primary-container/20 flex items-center justify-between text-on-primary-container"><span class="font-label-sm text-label-sm">v2.4.0 Engine</span><span class="font-data-mono text-data-mono text-[11px] px-2 py-0.5 rounded-full bg-tertiary-container text-tertiary-fixed">Live Sync</span></div></aside><div class="pl-60 min-h-screen flex flex-col"><header class="fixed top-0 left-60 right-0 h-[68px] z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-margin border-b border-surface-container-highest"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-base">home</span><span>/</span><span class="text-on-surface font-semibold">Console</span></div><div class="relative flex-1"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low border border-surface-container-highest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:border-secondary transition-all" placeholder="Search product IDs, order IDs, customer names..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[16px] h-4 px-1 rounded-full bg-secondary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center font-bold">4</span></button><button aria-label="Help Center" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-xl">help</span></button></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOXM-0elpulo2Hcy1AvMUi_CQO3NPW1-ZcWa6kBGqLq_IAgtZxvt0vh6-UcZ5o0M246PzHj9eKNO_KmxN1fa5bC-zh8TEnqkFRvPlihWR42C1u5-jdhTjOmMWGjdfiOH7W_w1REORuC-dXmwIiUdXnhyKVSjtHZFADKJBsDFTEepC9cQZcfUgwUueLTQPWO_ya9kAwcAVIVdqcndHvtjPREZabhSIiwFioomDlxAoIJZrwylzzm6Wb"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-on-surface leading-none">Alex Vance</span><span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-semibold leading-none">Super Admin</span></div><span class="font-body-sm text-body-sm text-on-surface-variant leading-none mt-1">alex.vance@techmart.io</span></div><span class="material-symbols-outlined text-on-surface-variant text-base cursor-pointer">expand_more</span></div></div></header><main class="flex-1 pt-[68px] w-full px-margin py-margin"><div class="flex flex-col w-full">
+<!-- Sub-Header & Global Management Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Console</span>
+<span class="text-outline-variant">/</span>
+<span>Administration</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Staff &amp; Roles</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Staff &amp; Role-Based Access Control</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 max-w-2xl">
+        Manage internal operator privileges, security posture (2FA/SSO), and department assignments across fulfillment clusters.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-9 px-space-md bg-surface-container-lowest text-primary border border-surface-container-highest hover:bg-surface-container-low transition-colors rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base text-on-surface-variant">file_download</span>
+<span>Export Audit Roster</span>
+</button>
+<button class="h-9 px-space-md bg-secondary-container hover:bg-secondary text-on-primary transition-colors rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">person_add</span>
+<span>+ Add New Staff Member</span>
+</button>
+</div>
+</div>
+<!-- Metric & Security Posture Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-surface-container-highest relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Active Operators</span>
+<span class="font-display-lg text-headline-lg font-bold text-primary mt-1">18 Members</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">admin_panel_settings</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 border-t border-surface-container-low">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[10px] font-bold">100% 2FA Enforced</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+2 added this month</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-surface-container-highest relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Super Administrators</span>
+<span class="font-display-lg text-headline-lg font-bold text-primary mt-1">3 Accounts</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary-container group-hover:bg-secondary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">key</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 border-t border-surface-container-low">
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] font-bold">Root Level</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Emergency break-glass configured</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-surface-container-highest relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Department Allocation</span>
+<span class="font-display-lg text-headline-lg font-bold text-primary mt-1">4 Clusters</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">hub</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between border-t border-surface-container-low">
+<span class="font-data-mono text-body-sm text-on-surface-variant truncate font-medium">
+          Fulfillment (8) • Accounts (4) • Inv (3)
+        </span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-surface-container-highest relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Security Posture</span>
+<span class="font-display-lg text-headline-lg font-bold text-primary mt-1">99.2% Health</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-[#15803D] group-hover:bg-[#15803D] group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl">verified_user</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-2 border-t border-surface-container-low">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[10px] font-bold">Compliant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Zero dormant accounts &gt;45d</span>
+</div>
+</div>
+</div>
+<!-- Main Content Grid (12-Col Split) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<!-- Main Left Column: Directory Table (XL 8 Cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md min-w-0">
+<!-- Search, Filtering, and Batch Ops Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container-highest flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm justify-between">
+<!-- Live Text Search -->
+<div class="relative flex-1 min-w-[240px]">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full h-9 pl-9 pr-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline border border-transparent focus:bg-surface-container-lowest focus:border-primary-container focus:outline-none transition-all" id="staff-search-input" placeholder="Search staff by name, email, or operator ID..." type="text"/>
+</div>
+<!-- Quick Dropdowns -->
+<div class="flex items-center gap-space-xs flex-wrap sm:flex-nowrap">
+<select class="h-9 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface border border-transparent focus:outline-none focus:border-primary-container">
+<option value="">All Roles</option>
+<option value="super-admin">Super Admin</option>
+<option value="inventory">Inventory Manager</option>
+<option value="orders">Fulfillment Lead</option>
+<option value="accounts">Accounts Specialist</option>
+</select>
+<select class="h-9 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface border border-transparent focus:outline-none focus:border-primary-container">
+<option value="">Department</option>
+<option value="ops">Operations &amp; Tech</option>
+<option value="procurement">Procurement</option>
+<option value="logistics">Logistics BLR-01</option>
+<option value="finance">Finance &amp; Tax</option>
+</select>
+<select class="h-9 px-space-md bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface border border-transparent focus:outline-none focus:border-primary-container">
+<option value="">All Statuses</option>
+<option value="active">Active</option>
+<option value="suspended">Suspended</option>
+<option value="pending">Invite Pending</option>
+</select>
+<button class="h-9 px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface-variant rounded-lg font-label-sm text-label-sm transition-colors flex items-center gap-1" title="Reset Filters" type="button">
+<span class="material-symbols-outlined text-base">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Bulk Bar Context -->
+<div class="flex items-center justify-between text-xs font-body-sm text-on-surface-variant px-1 pt-1 border-t border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="font-data-mono font-medium text-primary">18</span>
+<span>operators registered across 3 fulfillment zones</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">vpn_key</span> Force Password Rotations
+            </button>
+<span class="text-surface-container-highest">•</span>
+<button class="hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">security_update_good</span> Bulk 2FA Audit
+            </button>
+</div>
+</div>
+</div>
+<!-- High Density Staff Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-surface-container-highest overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="staff-table">
+<thead>
+<tr class="bg-surface-container-low/60 border-b border-surface-container-highest h-9">
+<th class="w-10 px-space-md text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Staff Member</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Assigned Role</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Department</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">2FA / Security</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Last Active</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-center">Status</th>
+<th class="px-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/60 font-body-sm text-body-sm">
+<!-- Row 1: Alex Vance (Logged in super user) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-[#EFF6FF]/40 border-l-2 border-l-primary">
+<td class="w-10 px-space-md text-center">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-2.5">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" data-alt="Close up professional headshot of male technology operations lead wearing modern dark spectacles in clean corporate office setting with subtle ambient blue light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnrKWfoKSCl7JxlCf-UWQNNrXXAh5dJttEMqKDYDnXVfWQBlLcMhtZxBC6xxfsVQY2ZGk-FCyWyJ4Ofqsc3tBTzHhuPzMXqy6sAjba1YE-AqY8mPZHk4cFGxqtmwnTaxUBylQkwn8z_eK2Um8awK38rDuIjEhrh_Y9IYQen1J4rQ9-nR025Q60lr9xe2o0SNGWQDuWQ4VMaLSlDTYzzwolF-uxFobR4yfFga6UU5DIeklCqFSyE22R"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-primary truncate">Alex Vance</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-[10px] font-bold">You</span>
+</div>
+<span class="font-data-mono text-[11px] text-on-surface-variant truncate">alex.vance@techmart.io</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-[11px] font-semibold">
+<span class="material-symbols-outlined text-xs">shield</span> Super Admin
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface font-medium truncate">
+                  Operations &amp; Tech
+                </td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-medium">
+<span class="material-symbols-outlined text-xs text-secondary-container">security</span> Hardware Token
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-data-mono text-[11px]">
+<span class="inline-block w-2 h-2 rounded-full bg-[#15803D] mr-1"></span>Just now (Active)
+                </td>
+<td class="px-space-md py-2.5 text-center">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-space-md py-2.5 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Manage Scope">
+<span class="material-symbols-outlined text-base">vpn_key</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Operator Profile">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="More Actions">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Priya Sharma -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="w-10 px-space-md text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-2.5">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-semibold text-xs">
+                      PS
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-primary truncate">Priya Sharma</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant truncate">priya.sharma@techmart.io</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#DBEAFE] text-[#1D4ED8] font-label-sm text-[11px] font-semibold">
+                    Catalog &amp; Inv Lead
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface font-medium truncate">
+                  Procurement Central
+                </td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-xs">smartphone</span> Authenticator App
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-data-mono text-[11px]">
+                  Today, 14:22 IST
+                </td>
+<td class="px-space-md py-2.5 text-center">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-space-md py-2.5 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Manage Scope">
+<span class="material-symbols-outlined text-base">vpn_key</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Profile">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Rajesh Kumar -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="w-10 px-space-md text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-2.5">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" data-alt="Professional corporate headshot portrait of an Indian male logistics operations supervisor in smart business attire against clean minimal neutral studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBigOkLJ0q05V6dphjW2J_Y-1C7HR8duN7zZeZrmry6ralKP9HrDZDs7krfVCN3ks5hYdnejiWPK8Cz0R5dxy9FVSWZB_tWohhjgJLw9L3ePsfGmEv9X16FLe5Lxtq_hFlaFY2Cb-rAqPMwTEjlJ7Aqfrto4fkNUWcTbpmSNgT1cxIxa2T4fvvvb48cpavrGkPOHYkS6f67ZLHZNF0iqOd18d6uLjMaXnAXajBh0viUFnyW0a1knqs5"/>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-primary truncate">Rajesh Kumar</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant truncate">rajesh.k@techmart.io</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#B45309] font-label-sm text-[11px] font-semibold">
+                    Fulfillment Lead
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface font-medium truncate">
+                  Logistics BLR-01
+                </td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-xs">key</span> YubiKey Bio
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-data-mono text-[11px]">
+                  Yesterday, 18:10 IST
+                </td>
+<td class="px-space-md py-2.5 text-center">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-space-md py-2.5 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Manage Scope">
+<span class="material-symbols-outlined text-base">vpn_key</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Profile">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Ananya Sen -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="w-10 px-space-md text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-2.5">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-[#E0E7FF] text-[#3730A3] flex items-center justify-center font-semibold text-xs">
+                      AS
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-primary truncate">Ananya Sen</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant truncate">ananya.sen@techmart.io</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#F3E8FF] text-[#7E22CE] font-label-sm text-[11px] font-semibold">
+                    Accounts Specialist
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface font-medium truncate">
+                  Finance &amp; Tax
+                </td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-xs">smartphone</span> Authenticator App
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-data-mono text-[11px]">
+                  Today, 11:05 IST
+                </td>
+<td class="px-space-md py-2.5 text-center">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-space-md py-2.5 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Manage Scope">
+<span class="material-symbols-outlined text-base">vpn_key</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Profile">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Vikram Rao -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="w-10 px-space-md text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-2.5">
+<div class="flex items-center gap-space-sm">
+<img class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-container-highest" data-alt="Editorial close-up corporate headshot of senior fulfillment planner smiling with warm professional lighting in modern high-tech warehouse logistics office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjHsryy8SqosD3t7FQgdsl4pjJaKy18T5256bd-8BJQ2YjrwdJWJk9LHgaKerIKZW-b-k3yxjMYBirqPpn3VVehNC75gpAyQKlD-qS2xsmhUSdlhVTCaa2M5fa7va-qNAV5F260JCyenvR_ZIvKuLP_5bwRex8BAwVObLGaZ5OFTD8Zy3c6DUBfNEOjmgGK56LLOy3bpCBV1cLOQz8SP8Kuq1D6LOEKwGAUMhO_HYDLchAWWdhOELi"/>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-primary truncate">Vikram Rao</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant truncate">vikram.rao@techmart.io</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-[11px] font-medium">
+                    Warehouse Operator
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface font-medium truncate">
+                  Logistics DEL-02
+                </td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#B45309] font-label-sm text-[11px] font-semibold">
+<span class="material-symbols-outlined text-xs">sms</span> SMS (Needs Upgrade)
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-data-mono text-[11px]">
+                  3 days ago
+                </td>
+<td class="px-space-md py-2.5 text-center">
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#15803D] font-label-sm text-[11px] font-semibold">Active</span>
+</td>
+<td class="px-space-md py-2.5 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Manage Scope">
+<span class="material-symbols-outlined text-base">vpn_key</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Edit Profile">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Options">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Sneha Menon (Suspended account) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-error-container/10">
+<td class="w-10 px-space-md text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="px-space-md py-2.5">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-semibold text-xs">
+                      SM
+                    </div>
+<div class="flex flex-col min-w-0">
+<span class="font-semibold text-primary line-through opacity-80 truncate">Sneha Menon</span>
+<span class="font-data-mono text-[11px] text-on-surface-variant truncate">sneha.m@techmart.io</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+                    Catalog Auditor
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-medium truncate">
+                  Procurement Central
+                </td>
+<td class="px-space-md py-2.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+                    Revoked
+                  </span>
+</td>
+<td class="px-space-md py-2.5 text-on-surface-variant font-data-mono text-[11px]">
+                  12 Nov 2024
+                </td>
+<td class="px-space-md py-2.5 text-center">
+<span class="px-2 py-0.5 rounded-full bg-[#FEE2E2] text-[#B91C1C] font-label-sm text-[11px] font-bold">Suspended</span>
+</td>
+<td class="px-space-md py-2.5 text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-[#15803D] hover:text-[#15803D] transition-colors" title="Reactivate Account">
+<span class="material-symbols-outlined text-base">lock_open</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-error hover:text-error transition-colors" title="Delete Operator Record">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-md py-space-sm bg-surface-container-low/40 border-t border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span>Showing <span class="font-semibold text-primary">1-6</span> of <span class="font-semibold text-primary">18</span> operators</span>
+<div class="hidden sm:flex items-center gap-1.5 pl-2 border-l border-surface-container-highest">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest text-primary rounded px-1.5 py-0.5 border border-surface-container-highest text-xs focus:outline-none">
+<option>10</option>
+<option>20</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-lowest border border-surface-container-highest text-on-surface-variant disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-sm align-middle">chevron_left</span>
+</button>
+<button class="w-7 h-7 rounded bg-primary text-on-primary font-semibold text-xs flex items-center justify-center shadow-xs">
+              1
+            </button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest border border-surface-container-highest hover:bg-surface-container text-on-surface font-semibold text-xs flex items-center justify-center transition-colors">
+              2
+            </button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest border border-surface-container-highest hover:bg-surface-container text-on-surface font-semibold text-xs flex items-center justify-center transition-colors">
+              3
+            </button>
+<button class="px-2 py-1 rounded bg-surface-container-lowest border border-surface-container-highest text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-sm align-middle">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Right Column: Role Permission Matrix & Granular Scopes (XL 4 Cols) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<!-- Role Scope Inspector Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm border border-surface-container-highest flex flex-col">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Granular Policy Studio</span>
+<span class="font-headline-sm text-headline-sm text-primary">Role Scope Matrix</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[10px] font-bold">RBAC v4.2</span>
+</div>
+<!-- Role Selector Switcher -->
+<div class="mt-space-md">
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1.5 font-medium">Select Role Profile to Inspect</label>
+<div class="relative">
+<select class="w-full h-10 px-space-md pr-8 bg-surface-container-low rounded-lg font-body-sm text-body-sm font-semibold text-primary border border-surface-container-highest focus:border-primary-container focus:bg-surface-container-lowest focus:outline-none transition-all" id="role-selector">
+<option selected="" value="inventory">Inventory Manager (Default Ops)</option>
+<option value="admin">Super Administrator (Break-Glass)</option>
+<option value="fulfillment">Fulfillment &amp; Dispatch Lead</option>
+<option value="accounts">Finance &amp; Settlement Auditor</option>
+<option value="support">Tier-2 Customer Escalation</option>
+</select>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed bg-surface-container-low/60 p-space-sm rounded-lg border border-surface-container-highest">
+            Controls product master data, low-stock reorder thresholds, warehouse bin allocations, and external supplier sync feeds.
+          </p>
+</div>
+<!-- Scoped Granular Permissions -->
+<div class="mt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-xs font-label-sm uppercase tracking-wider text-on-surface-variant">
+<span>Subsystem Scopes</span>
+<span>Granted Privileges</span>
+</div>
+<!-- Perm 1: Catalog Master Data -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 border border-surface-container-highest flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">inventory_2</span>
+<span class="font-label-md text-label-md text-primary">Catalog Management</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-[#DCFCE7] text-[#15803D] font-label-sm text-[10px] font-bold">Write Access</span>
+</div>
+<div class="flex items-center justify-between pt-1 text-xs text-on-surface-variant">
+<span>Read, Write, and Archive SKUs</span>
+<div class="flex items-center gap-2">
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-0 text-xs" type="checkbox"/>
+<span class="ml-1 text-[11px] font-medium text-primary">Write</span>
+</label>
+<label class="inline-flex items-center cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-0 text-xs" type="checkbox"/>
+<span class="ml-1 text-[11px] font-medium text-primary">Delete</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Perm 2: Stock Adjustment Threshold -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 border border-surface-container-highest flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">tune</span>
+<span class="font-label-md text-label-md text-primary">Stock Adjustment</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-[#FEF3C7] text-[#B45309] font-label-sm text-[10px] font-bold">Conditional</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight">
+              Full manual variance posting up to ₹50,000. Higher adjustments require dual Super Admin authorization.
+            </p>
+</div>
+<!-- Perm 3: Customer PII Protection -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 border border-surface-container-highest flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-[#B45309]">visibility_off</span>
+<span class="font-label-md text-label-md text-primary">Customer PII Data</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-[#FEF3C7] text-[#B45309] font-label-sm text-[10px] font-bold">Masked View</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight">
+              Phone numbers, personal email, and residential shipping coordinates are hashed for data privacy compliance.
+            </p>
+</div>
+<!-- Perm 4: Financial & Settlement Ledgers -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 border border-surface-container-highest flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-error">block</span>
+<span class="font-label-md text-label-md text-primary">Settlement Ledgers</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-[#FEE2E2] text-[#B91C1C] font-label-sm text-[10px] font-bold">Restricted</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight">
+              Zero visibility into merchant disbursement files, gateway splits, or tax GST filings.
+            </p>
+</div>
+<!-- Perm 5: API Credentials & Webhooks -->
+<div class="p-space-sm rounded-lg bg-surface-container-low/40 border border-surface-container-highest flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-primary">terminal</span>
+<span class="font-label-md text-label-md text-primary">External API &amp; Webhooks</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-[#DBEAFE] text-[#1D4ED8] font-label-sm text-[10px] font-bold">Read-Only</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight">
+              Can inspect telemetry feeds and endpoint logs; cannot re-generate or revoke production secret keys.
+            </p>
+</div>
+</div>
+<!-- Role Action Footers -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container-highest flex items-center justify-between gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-base">add_moderator</span>
+<span>Clone Role</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-colors shadow-sm flex items-center gap-1.5" id="save-permissions-btn" type="button">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Save Permissions</span>
+</button>
+</div>
+</div>
+<!-- Quick Security Posture Digest Card -->
+<div class="bg-primary text-on-primary rounded-xl p-space-lg shadow-sm flex flex-col relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/10 pointer-events-none"></div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary-container text-xl">verified</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-white">Zero Trust Enforcement</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed leading-relaxed">
+          All high-tier privileges automatically invalidate operational tokens after 12 hours of inactivity. SMS 2FA deprecation is scheduled across Indian data centers in 14 days.
+        </p>
+<div class="mt-space-md flex items-center justify-between pt-space-sm border-t border-primary-container">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Next Key Rotation: In 9 days</span>
+<a class="text-secondary-fixed text-xs font-semibold hover:underline flex items-center gap-0.5" href="#">
+            View Policy Audit <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for the staff table & role configuration
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('staff-search-input');
+    const tableRows = document.querySelectorAll('#staff-table tbody tr');
+    const saveBtn = document.getElementById('save-permissions-btn');
+
+    // Live search filter across staff names and emails
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        tableRows.forEach(row => {
+          const text = row.innerText.toLowerCase();
+          if (text.includes(query)) {
+            row.style.display = '';
+          } else {
+            row.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // Save permissions toast micro-interaction
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const originalText = saveBtn.innerHTML;
+        saveBtn.disabled = true;
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">refresh</span> <span>Updating Scopes...</span>';
+        
+        setTimeout(() => {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-base">done_all</span> <span>Saved!</span>';
+          saveBtn.classList.remove('bg-primary');
+          saveBtn.classList.add('bg-[#15803D]');
+          
+          setTimeout(() => {
+            saveBtn.innerHTML = originalText;
+            saveBtn.disabled = false;
+            saveBtn.classList.remove('bg-[#15803D]');
+            saveBtn.classList.add('bg-primary');
+          }, 2000);
+        }, 650);
+      });
+    }
+  });
+</script></main></div></body></html>

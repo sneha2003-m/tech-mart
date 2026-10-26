@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f6fa" />
+    <title>Dashboard | TechMart Admin</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar" aria-label="Main navigation">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">T</span> TechMart</div>
+        <p class="nav-heading">Main menu</p>
+        <nav class="nav">
+          <a href="#" aria-current="page">Dashboard</a>
+          <a href="#">Products</a>
+          <a href="#">Categories</a>
+          <a href="#">Inventory</a>
+          <a href="#">Orders</a>
+          <a href="#">Customers</a>
+          <a href="#">Payments</a>
+          <a href="#">Shipping &amp; Delivery</a>
+          <a href="#">Reports &amp; Analytics</a>
+          <a href="#">External API Imports</a>
+          <a href="#">Notifications</a>
+          <a href="#">Settings</a>
+        </nav>
+        <div class="sidebar-note">Admin dashboard prototype<br />Connected to demo data only</div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <span class="crumb">Operations / Dashboard</span>
+          <div class="user"><span class="avatar" aria-hidden="true">A</span><span>Administrator</span></div>
+        </header>
+
+        <main>
+          <div class="page-heading">
+            <div>
+              <h1>Dashboard</h1>
+              <p class="subtitle">A summary of orders, payments, and inventory.</p>
+            </div>
+          </div>
+
+          <div class="demo-banner" role="note">
+            Demo data only. These figures are calculated in this browser and are not connected to a database or API.
+            Revenue includes paid, non-cancelled orders only.
+          </div>
+
+          <form class="filters" id="date-filter">
+            <div class="field">
+              <label for="start-date">From</label>
+              <input class="form-control" id="start-date" name="startDate" type="date" required />
+            </div>
+            <div class="field">
+              <label for="end-date">To</label>
+              <input class="form-control" id="end-date" name="endDate" type="date" required />
+            </div>
+            <button class="btn btn-primary primary-button" type="submit">Apply date range</button>
+          </form>
+          <p class="filter-error" id="filter-error" role="alert" hidden></p>
+
+          <section class="metrics" aria-label="Business summary">
+            <article class="metric">
+              <span class="metric-label">Revenue</span>
+              <strong class="metric-value" id="metric-revenue">—</strong>
+              <span class="metric-foot">Paid, non-cancelled orders</span>
+            </article>
+            <article class="metric">
+              <span class="metric-label">Order count</span>
+              <strong class="metric-value" id="metric-orders">—</strong>
+              <span class="metric-foot">Orders in selected date range</span>
+            </article>
+            <article class="metric">
+              <span class="metric-label">Pending orders</span>
+              <strong class="metric-value" id="metric-pending-orders">—</strong>
+              <span class="metric-foot">Awaiting required checks</span>
+            </article>
+            <article class="metric">
+              <span class="metric-label">Total products</span>
+              <strong class="metric-value" id="metric-products">—</strong>
+              <span class="metric-foot">Products in demo catalog</span>
+            </article>
+            <article class="metric">
+              <span class="metric-label">Low-stock products</span>
+              <strong class="metric-value" id="metric-low-stock">—</strong>
+              <span class="metric-foot">At or below stock threshold</span>
+            </article>
+            <article class="metric">
+              <span class="metric-label">Pending payments</span>
+              <strong class="metric-value" id="metric-pending-payments">—</strong>
+              <span class="metric-foot" id="metric-pending-payment-count">—</span>
+            </article>
+          </section>
+
+          <section class="content-grid">
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Orders in selected date range</h2>
+                  <p>Payment status and order status are shown separately.</p>
+                </div>
+                <a class="text-link" href="#">View orders</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Order</th>
+                      <th>Customer</th>
+                      <th>Date</th>
+                      <th>Total</th>
+                      <th>Payment</th>
+                      <th>Order status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="recent-orders"></tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel-heading">
+                <div>
+                  <h2>Low-stock products</h2>
+                  <p>Quantity is at or below the configured threshold.</p>
+                </div>
+                <a class="text-link" href="#">View inventory</a>
+              </div>
+              <div class="stock-list" id="low-stock-list"></div>
+              <div class="panel-footer">
+                <a class="text-link" href="#">Open inventory</a>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="assets/js/dashboard.js" defer></script>
+  </body>
+</html>
